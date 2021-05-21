@@ -24,6 +24,7 @@ class _WalletCreationPasswordModalState
 
   @override
   void dispose() {
+    Log.info("Wallet Creation Password Modal => dispose");
     passwordCreationBloc.close();
     pageController.dispose();
     super.dispose();
@@ -91,12 +92,20 @@ class _WalletCreationPasswordModalState
   }
 
   void goToValidView(BuildContext context) {
-    pageController.jumpToPage(1);
+    pageController.animateToPage(
+      1,
+      duration: const Duration(milliseconds: 400),
+      curve: Curves.bounceInOut,
+    );
   }
 
   void goToWalletCreationView(BuildContext context) {
     if (pageController.page != 2) {
-      pageController.jumpToPage(2);
+      pageController.animateToPage(
+        2,
+        duration: const Duration(milliseconds: 400),
+        curve: Curves.bounceInOut,
+      );
     }
   }
 }

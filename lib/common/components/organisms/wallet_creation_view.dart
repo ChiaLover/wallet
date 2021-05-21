@@ -11,7 +11,8 @@ class WalletCreationView extends StatelessWidget {
           case Creating:
             return loadingView();
           case WalletCreateSuccess:
-            return successView(context, onPressed: handlePressFinish);
+            return successView(context,
+                onPressed: () => handlePressFinish(context));
           default:
             return Container();
         }
@@ -19,7 +20,13 @@ class WalletCreationView extends StatelessWidget {
     );
   }
 
-  void handlePressFinish() {}
+  void handlePressFinish(BuildContext context) {
+    try {
+      Navigator.of(context).pop("testId");
+    } catch (ex) {
+      Log.error(ex);
+    }
+  }
 
   Widget loadingView() {
     return Flex(

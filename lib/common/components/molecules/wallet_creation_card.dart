@@ -45,14 +45,30 @@ class WalletCreationCard extends StatelessWidget {
 
   _navigateToCreatePasswordPage(BuildContext context) async {
     try {
-      await showModalBottomSheet(
-        context: context,
-        isScrollControlled: true,
-        isDismissible: false,
-        builder: (_) => WalletCreationPasswordModal(),
-      );
+      String? walletId = await _goToWalletCreationModal(context);
+      bool isWalletCreated = walletId?.isNotEmpty ?? false;
+      if (isWalletCreated) {
+        Log.debug("_goToWalletDetails");
+        _goToWalletDetails(context, walletId!);
+      }
     } catch (ex) {
       Log.error(ex);
     }
+  }
+
+  void _goToWalletDetails(BuildContext context, String walletId) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => WalletDetailPage(walletId)),
+    );
+  }
+
+  _goToWalletCreationModal(BuildContext context) {
+    return showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      isDismissible: false,
+      builder: (_) => WalletCreationPasswordModal(),
+    );
   }
 }
