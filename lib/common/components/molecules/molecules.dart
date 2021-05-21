@@ -13,3 +13,4 @@ part 'feedback_list_item.dart';
 part 'setting_list_item.dart';
 part 'feature_list_item.dart';
 part 'term_item.dart';
+part 'pin_listing.dart';

@@ -5,7 +5,6 @@ class WalletCreationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Log.debug(MediaQuery.of(context).padding);
     return GestureDetector(
       onTap: () => _handleTapCard(context),
       child: WalletCard(
@@ -40,18 +39,36 @@ class WalletCreationCard extends StatelessWidget {
       builder: (_) => TermsRulesTemplate(),
     );
     if (success) {
-      _navigateToCreatePasswordPage(context);
+      await _navigateToCreatePasswordPage(context);
     }
   }
 
-  void _navigateToCreatePasswordPage(BuildContext context) {
+  _navigateToCreatePasswordPage(BuildContext context) async {
     try {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => WalletCreationPasswordPage()),
-      );
+      String? walletId = await _goToWalletCreationModal(context);
+      bool isWalletCreated = walletId?.isNotEmpty ?? false;
+      if (isWalletCreated) {
+        Log.debug("_goToWalletDetails");
+        _goToWalletDetails(context, walletId!);
+      }
     } catch (ex) {
       Log.error(ex);
     }
+  }
+
+  void _goToWalletDetails(BuildContext context, String walletId) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => WalletDetailPage(walletId)),
+    );
+  }
+
+  _goToWalletCreationModal(BuildContext context) {
+    return showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      isDismissible: false,
+      builder: (_) => WalletCreationPasswordModal(),
+    );
   }
 }

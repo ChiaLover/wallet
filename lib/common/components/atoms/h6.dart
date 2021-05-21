@@ -10,7 +10,7 @@ class H6 extends StatelessWidget {
     final theme = Theme.of(context);
     final defaultStyle = DefaultTextStyle.of(context).style;
     final textStyle =
-        theme.textTheme.headline6?.copyWith(color: defaultStyle.color);
+        theme.textTheme.headline6;
     return Text(
       this.text,
       style: textStyle,

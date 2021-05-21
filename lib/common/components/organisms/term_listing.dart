@@ -17,6 +17,7 @@ class TermListing extends StatelessWidget {
     );
     return ListView(
       children: [
+        Align(child: SvgPicture.asset(AssetLinks.imgRulesTerms),alignment: Alignment.centerLeft,),
         Container(
           margin: EdgeInsets.only(bottom: 8),
           child: DefaultTextStyle(
