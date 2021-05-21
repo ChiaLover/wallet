@@ -47,7 +47,7 @@ class _PasswordValidationViewState extends State<PasswordValidationView> {
   }
 
   void handleTypeValidPasscodeCompleted(BuildContext context, String passcode) {
-    BlocProvider.of<WalletCreationBloc>(context).add(ValidPasscode(passcode));
+    BlocProvider.of<WalletCreationBloc>(context).add(ValidatePasscode(passcode));
   }
 
   void _handleWalletCreationStateChanged(

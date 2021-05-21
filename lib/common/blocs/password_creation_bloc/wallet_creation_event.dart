@@ -9,10 +9,10 @@ class CreatePassCode extends WalletCreationEvent {
   CreatePassCode(this.passcode);
 }
 
-class ValidPasscode extends WalletCreationEvent {
+class ValidatePasscode extends WalletCreationEvent {
   final String rePasscode;
 
-  ValidPasscode(this.rePasscode);
+  ValidatePasscode(this.rePasscode);
 }
 
 class CreateWallet extends WalletCreationEvent {
