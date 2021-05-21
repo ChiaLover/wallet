@@ -9,12 +9,12 @@ enum LogLevel { DEBUG, INFO, ERROR }
 class Log {
   static Uri? _uri;
 
-  static LogLevel logLevel = LogLevel.values[Config.getInt("log_level")];
+  static LogLevel logLevel = LogLevel.values[Config.getInt("log_level") ?? LogLevel.ERROR.index] ;
 
   static void postLog(String data) {
     try {
       if (_uri == null) {
-        var url = Config.getString("log_endpoint");
+        var url = Config.getString("log_endpoint") ?? '';
         _uri = Uri.parse(url);
       }
       if (_uri != null) {

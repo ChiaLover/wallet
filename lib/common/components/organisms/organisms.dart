@@ -1,10 +1,22 @@
 library organisms;
 
+import 'dart:math';
+
 import 'package:chia_wallet/common/asset/assets.dart';
+import 'package:chia_wallet/common/blocs/password_creation_bloc/wallet_creation_bloc.dart';
 import 'package:chia_wallet/common/components/atoms/atoms.dart';
 import 'package:chia_wallet/common/components/molecules/molecules.dart';
+import 'package:chia_wallet/common/components/templates/templates.dart';
+import 'package:chia_wallet/core/utils/config.dart';
+import 'package:chia_wallet/core/utils/log.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 part 'setting_list_creation.dart';
 part 'term_listing.dart';
+part 'pin_code.dart';
+part 'password_creation_view.dart';
+part 'password_validation_view.dart';
+part 'wallet_creation_view.dart';

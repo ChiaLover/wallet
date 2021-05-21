@@ -25,6 +25,7 @@ class TermsRulesTemplate extends StatelessWidget {
       margin: EdgeInsets.all(16),
       child: Flex(
         direction: Axis.vertical,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Flex(
             direction: Axis.horizontal,

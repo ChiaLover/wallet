@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:core';
+import 'dart:math';
 
 import 'package:chia_wallet/core/utils/log.dart';
 
@@ -39,47 +40,30 @@ class Config {
     }
   }
 
-  static int getInt(String key) {
-    return _config!.getInt(key);
+  static int? getInt(String key) {
+    return _config?.getInt(key);
   }
 
-  static String getString(String key) {
-    return _config!.getString(key);
+  static String? getString(String key) {
+    return _config?.getString(key);
   }
 
-  static double getDouble(String key) {
-    return _config!.getDouble(key);
+  static double? getDouble(String key) {
+    return _config?.getDouble(key);
   }
 
-  static bool getBool(String key) {
-    return _config!.getBool(key);
+  static bool? getBool(String key) {
+    return _config?.getBool(key);
   }
 
-  static int getCurrentVersion() => 3;
+  static int getCurrentVersion() => 1;
 
   static String get storeCurrentVersion => "3.0.2";
 
   /*Use to force update, be careful */
-  static int getLatestVersion() => getInt("latest_version");
-
-  static int getMinVersion() => getInt("min_version");
-
-  static String getStaticHost() => getString("static_host");
-
-  static String getProtocol() => getString("protocol");
-
-  static String buildMediaStaticUrl(String rawUrl) {
-    return "${Config.getStaticHost()}/$rawUrl";
-  }
-
-  static int getTotalImageSizeInCache() =>
-      getInt('cache_total_image_size_in_bytes');
-
-  static int getTotalImageInCache() => getInt('cache_total_image');
-
-  static String getMessageError() => getString("msg_error_try_again");
-
-  static String getMessageNoConnection() => getString("msg_no_connection");
+  // static int getLatestVersion() => getInt("latest_version");
+  //
+  // static int getMinVersion() => getInt("min_version");
 }
 
 class RemoteConfig {
@@ -87,19 +71,19 @@ class RemoteConfig {
 
   RemoteConfig(this._default);
 
-  int getInt(String key) {
+  int? getInt(String key) {
     return _default[key];
   }
 
-  String getString(String key) {
+  String? getString(String key) {
     return _default[key];
   }
 
-  double getDouble(String key) {
+  double? getDouble(String key) {
     return _default[key];
   }
 
-  bool getBool(String key) {
+  bool? getBool(String key) {
     return _default[key];
   }
 

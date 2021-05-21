@@ -9,4 +9,3 @@ import 'package:flutter/material.dart';
 
 part 'wallet_creation_page.dart';
 part 'entry_point_page.dart';
-part 'wallet_creation_password_page.dart';
