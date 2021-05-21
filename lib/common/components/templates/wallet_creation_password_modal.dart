@@ -83,7 +83,7 @@ class _WalletCreationPasswordModalState
       case PassCodeValidation:
         goToValidView(context);
         break;
-      case Creating:
+      case WalletCreating:
       case WalletCreateSuccess:
       case WalletCreateFailure:
         goToWalletCreationView(context);

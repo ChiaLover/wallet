@@ -25,7 +25,7 @@ class WalletCreationBloc
         yield* _handleCreatePassword(event as CreatePassCode);
         break;
       case ValidatePasscode:
-        yield* _handleValidPassword(event as ValidatePasscode);
+        yield* _handleValidatePassword(event as ValidatePasscode);
         break;
       case CreateWallet:
         yield* _handleCreateWallet(event as CreateWallet);
@@ -44,7 +44,7 @@ class WalletCreationBloc
     }
   }
 
-  Stream<WalletCreationState> _handleValidPassword(ValidatePasscode event) async* {
+  Stream<WalletCreationState> _handleValidatePassword(ValidatePasscode event) async* {
     try {
       bool correctPasscode = checkPasscode(event.rePasscode);
       if (correctPasscode) {
@@ -60,7 +60,7 @@ class WalletCreationBloc
 
   Stream<WalletCreationState> _handleCreateWallet(CreateWallet event) async* {
     try {
-      yield Creating();
+      yield WalletCreating();
       //TODO: API creation Wallet
       sleep(Duration(seconds: 2));
       yield WalletCreateSuccess();

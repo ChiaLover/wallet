@@ -34,8 +34,8 @@ class _PasswordValidationViewState extends State<PasswordValidationView> {
             child: PinCode(
               totalPin: totalPin,
               controller: controller,
-              onTypePinCompleted: (code) =>
-                  handleTypeValidPasscodeCompleted(context, code),
+              onPinSubmitted: (code) =>
+                  handleValidPasscodeSubmitted(context, code),
             ),
           ),
           Spacer(),
@@ -46,7 +46,7 @@ class _PasswordValidationViewState extends State<PasswordValidationView> {
     );
   }
 
-  void handleTypeValidPasscodeCompleted(BuildContext context, String passcode) {
+  void handleValidPasscodeSubmitted(BuildContext context, String passcode) {
     BlocProvider.of<WalletCreationBloc>(context).add(ValidatePasscode(passcode));
   }
 

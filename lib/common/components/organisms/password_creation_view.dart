@@ -23,8 +23,8 @@ class PasswordCreationView extends StatelessWidget {
           margin: EdgeInsets.symmetric(horizontal: 70),
           child: PinCode(
             totalPin: totalPin,
-            onTypePinCompleted: (code) =>
-                handleTypePasscodeCompleted(context, code),
+            onPinSubmitted: (code) =>
+                handlePasscodeSubmitted(context, code),
           ),
         ),
         Spacer(),
@@ -34,7 +34,7 @@ class PasswordCreationView extends StatelessWidget {
     );
   }
 
-  void handleTypePasscodeCompleted(BuildContext context, String passcode) {
+  void handlePasscodeSubmitted(BuildContext context, String passcode) {
     BlocProvider.of<WalletCreationBloc>(context)
         .add(CreatePassCode(passcode));
   }

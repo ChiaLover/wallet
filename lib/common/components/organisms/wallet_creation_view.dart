@@ -8,7 +8,7 @@ class WalletCreationView extends StatelessWidget {
     return BlocBuilder<WalletCreationBloc, WalletCreationState>(
       builder: (context, state) {
         switch (state.runtimeType) {
-          case Creating:
+          case WalletCreating:
             return loadingView();
           case WalletCreateSuccess:
             return successView(context,

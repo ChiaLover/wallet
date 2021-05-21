@@ -1,14 +1,14 @@
 part of organisms;
 
 class PinCode extends StatefulWidget {
-  final void Function(String)? onTypePinCompleted;
+  final void Function(String)? onPinSubmitted;
   final int totalPin;
   final Color color;
   final PinCodeController? controller;
 
   const PinCode({
     Key? key,
-    this.onTypePinCompleted,
+    this.onPinSubmitted,
     this.controller,
     required this.totalPin,
     this.color = Colors.black,
@@ -82,8 +82,8 @@ class _PinCodeState extends State<PinCode> implements _PinCodeListener {
       setState(() {});
       if (code.length == widget.totalPin) {
         pinFocusNode.unfocus();
-        if (widget.onTypePinCompleted != null) {
-          widget.onTypePinCompleted!(code);
+        if (widget.onPinSubmitted != null) {
+          widget.onPinSubmitted!(code);
         }
       }
     } catch (ex) {

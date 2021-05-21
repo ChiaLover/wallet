@@ -19,7 +19,7 @@ class PassCodeValidation extends WalletCreationState {
 
 class WrongPasscode extends WalletCreationState {}
 
-class Creating extends WalletCreationState {}
+class WalletCreating extends WalletCreationState {}
 
 class WalletCreateSuccess extends WalletCreationState {}
 
