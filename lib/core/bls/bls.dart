@@ -5,20 +5,23 @@ import 'package:convert/convert.dart';
 import 'package:ffi/ffi.dart';
 
 typedef NativeGetPublicKeyFuncType = Pointer<Uint8> Function(Pointer<Uint8>);
-typedef NativeSignFuncType = NativeByteArray Function(Pointer<Uint8>, NativeByteArray);
+typedef NativeSignFuncType = NativeByteArray Function(
+    Pointer<Uint8>, NativeByteArray);
 typedef NativeVerifyFuncType = Int8 Function(Pointer<Uint8>);
 
 // library
-final nativeLib =
-    Platform.isAndroid ? DynamicLibrary.open("libbls.so") : DynamicLibrary.process();
+final nativeLib = Platform.isAndroid
+    ? DynamicLibrary.open("libsbl.so")
+    : DynamicLibrary.process();
 
-final nativeKeyGen = nativeLib
-    .lookupFunction<Pointer<Uint8> Function(), Pointer<Uint8> Function()>("key_gen");
+final nativeKeyGen = nativeLib.lookupFunction<
+    Pointer<Uint8> Function(Pointer<Uint8>),
+    Pointer<Uint8> Function(Pointer<Uint8>)>("key_gen");
 
 final nativeVerifySignature = nativeLib.lookupFunction<
     Uint8 Function(Pointer<Uint8>, Pointer<Uint8>, Pointer<Uint8>, Uint64),
-    int Function(
-        Pointer<Uint8>, Pointer<Uint8>, Pointer<Uint8>, int)>("verify_signature");
+    int Function(Pointer<Uint8>, Pointer<Uint8>, Pointer<Uint8>,
+        int)>("verify_signature");
 
 // sign with private key & message
 final nativeSign = nativeLib.lookupFunction<
@@ -30,14 +33,12 @@ final NativeGetPublicKeyFuncType nativeGetPublicKey = nativeLib
     .lookup<NativeFunction<NativeGetPublicKeyFuncType>>("get_public_key")
     .asFunction();
 
-
 // verify verify
-final nativeVerify =
-    nativeLib.lookupFunction<Int8 Function(Pointer<Uint8>), int Function(Pointer<Uint8>)>(
-        "verify_key");
+final nativeVerify = nativeLib.lookupFunction<Int8 Function(Pointer<Uint8>),
+    int Function(Pointer<Uint8>)>("verify_key");
 
-final nativeTestString = nativeLib
-    .lookupFunction<Pointer<Utf8> Function(), Pointer<Utf8> Function()>("test_string");
+final nativeTestString = nativeLib.lookupFunction<Pointer<Utf8> Function(),
+    Pointer<Utf8> Function()>("test_string");
 
 const PRIVATE_KEY_LEN = 32;
 const PUBLIC_KEY_LEN = 48;
@@ -54,8 +55,12 @@ class Bls {
   List<int> _privateKey = [];
   List<int> _publicKey = [];
 
-  Bls() {
-    final data = nativeKeyGen().asTypedList(81);
+  Bls(List<int> seed) {
+    final Pointer<Uint8> s = listToPointer(seed);
+    final data = nativeKeyGen(s).asTypedList(81);
+
+    calloc.free(s);
+
     print(data);
     final success = data[0];
     if (success == 0) print("success");

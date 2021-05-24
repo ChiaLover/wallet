@@ -28,12 +28,13 @@ vector<uint8_t> append(vector<uint8_t> a, vector<uint8_t> b) {
     return a;
 }
 
+//{0,  51, 6,  244, 24,  199, 1,  25,  52,  88,  192,
+//                            19, 18, 12, 89,  6,   220, 18, 102, 58,  209, 82,
+//                            12, 62, 89, 110, 182, 9,   44, 20,  254, 22};
 extern "C" __attribute__((visibility("default"))) __attribute__((used))
-uint8_t* key_gen() {
-    std::vector<uint8_t> seed = {0,  51, 6,  244, 24,  199, 1,  25,  52,  88,  192,
-                                19, 18, 12, 89,  6,   220, 18, 102, 58,  209, 82,
-                                12, 62, 89, 110, 182, 9,   44, 20,  254, 22};
-    
+uint8_t* key_gen(uint8_t* seedBytes) {
+    std::vector<uint8_t> seed(seedBytes, seedBytes + 32);
+
     bls::PrivateKey sk = bls::AugSchemeMPL().KeyGen(seed);
     bls::G1Element pk = sk.GetG1Element();
     
