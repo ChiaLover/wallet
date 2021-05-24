@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,268 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		AAD4E905265BFFD3001753E9 /* relic_ep2_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7E9265BFFD2001753E9 /* relic_ep2_dbl.c */; };
+		AAD4E906265BFFD3001753E9 /* relic_fp_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7EA265BFFD2001753E9 /* relic_fp_exp.c */; };
+		AAD4E907265BFFD3001753E9 /* relic_dv_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7EB265BFFD2001753E9 /* relic_dv_mem.c */; };
+		AAD4E908265BFFD3001753E9 /* relic_fpx_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7EC265BFFD2001753E9 /* relic_fpx_srt.c */; };
+		AAD4E909265BFFD3001753E9 /* relic_fb_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7ED265BFFD2001753E9 /* relic_fb_param.c */; };
+		AAD4E90A265BFFD3001753E9 /* relic_fb_trc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7EE265BFFD2001753E9 /* relic_fb_trc_low.c */; };
+		AAD4E90B265BFFD3001753E9 /* relic_cp_zss.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7EF265BFFD2001753E9 /* relic_cp_zss.c */; };
+		AAD4E90C265BFFD3001753E9 /* relic_pp_add_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F0265BFFD2001753E9 /* relic_pp_add_k8.c */; };
+		AAD4E90D265BFFD3001753E9 /* relic_fb_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F1265BFFD2001753E9 /* relic_fb_add.c */; };
+		AAD4E90E265BFFD3001753E9 /* relic_fb_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F2265BFFD2001753E9 /* relic_fb_cmp.c */; };
+		AAD4E90F265BFFD3001753E9 /* relic_pp_add_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F3265BFFD2001753E9 /* relic_pp_add_k2.c */; };
+		AAD4E910265BFFD3001753E9 /* relic_ep2_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F4265BFFD2001753E9 /* relic_ep2_mul_sim.c */; };
+		AAD4E911265BFFD3001753E9 /* relic_ed_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F5265BFFD2001753E9 /* relic_ed_curve.c */; };
+		AAD4E912265BFFD3001753E9 /* relic_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F6265BFFD2001753E9 /* relic_util.c */; };
+		AAD4E913265BFFD3001753E9 /* relic_dv_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F7265BFFD2001753E9 /* relic_dv_util.c */; };
+		AAD4E914265BFFD3001753E9 /* relic_ep2_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F8265BFFD2001753E9 /* relic_ep2_map.c */; };
+		AAD4E915265BFFD3001753E9 /* rijndael-alg-fst.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7F9265BFFD2001753E9 /* rijndael-alg-fst.c */; };
+		AAD4E916265BFFD3001753E9 /* blake2s-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7FA265BFFD2001753E9 /* blake2s-ref.c */; };
+		AAD4E917265BFFD3001753E9 /* relic_cp_cls.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7FB265BFFD2001753E9 /* relic_cp_cls.c */; };
+		AAD4E918265BFFD3001753E9 /* relic_fp18_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7FC265BFFD2001753E9 /* relic_fp18_sqr.c */; };
+		AAD4E919265BFFD3001753E9 /* relic_fb_shift.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7FD265BFFD2001753E9 /* relic_fb_shift.c */; };
+		AAD4E91A265BFFD3001753E9 /* relic_fpx_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7FE265BFFD2001753E9 /* relic_fpx_mul_low.c */; };
+		AAD4E91B265BFFD3001753E9 /* relic_bn_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7FF265BFFD2001753E9 /* relic_bn_mem.c */; };
+		AAD4E91C265BFFD3001753E9 /* relic_cp_ghpe.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E800265BFFD2001753E9 /* relic_cp_ghpe.c */; };
+		AAD4E91D265BFFD3001753E9 /* relic_ed_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E801265BFFD2001753E9 /* relic_ed_neg.c */; };
+		AAD4E91E265BFFD3001753E9 /* relic_cp_bls.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E802265BFFD2001753E9 /* relic_cp_bls.c */; };
+		AAD4E91F265BFFD3001753E9 /* relic_pc_core.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E803265BFFD2001753E9 /* relic_pc_core.c */; };
+		AAD4E920265BFFD3001753E9 /* relic_fb_trc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E804265BFFD2001753E9 /* relic_fb_trc.c */; };
+		AAD4E921265BFFD3001753E9 /* relic_ed_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E805265BFFD2001753E9 /* relic_ed_param.c */; };
+		AAD4E922265BFFD3001753E9 /* relic_fpx_rdc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E806265BFFD2001753E9 /* relic_fpx_rdc_low.c */; };
+		AAD4E923265BFFD3001753E9 /* relic_fp9_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E807265BFFD2001753E9 /* relic_fp9_sqr.c */; };
+		AAD4E924265BFFD3001753E9 /* relic_bn_mod.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E808265BFFD2001753E9 /* relic_bn_mod.c */; };
+		AAD4E925265BFFD3001753E9 /* relic_pp_exp_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E809265BFFD2001753E9 /* relic_pp_exp_k2.c */; };
+		AAD4E926265BFFD3001753E9 /* relic_eb_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E80A265BFFD2001753E9 /* relic_eb_norm.c */; };
+		AAD4E927265BFFD3001753E9 /* relic_ep2_mul_cof.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E80B265BFFD2001753E9 /* relic_ep2_mul_cof.c */; };
+		AAD4E928265BFFD3001753E9 /* relic_pp_exp_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E80C265BFFD2001753E9 /* relic_pp_exp_k8.c */; };
+		AAD4E929265BFFD3001753E9 /* relic_bn_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E80D265BFFD2001753E9 /* relic_bn_sqr.c */; };
+		AAD4E92A265BFFD3001753E9 /* relic_fp8_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E80E265BFFD2001753E9 /* relic_fp8_mul.c */; };
+		AAD4E92B265BFFD3001753E9 /* relic_fp_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E80F265BFFD2001753E9 /* relic_fp_sqr.c */; };
+		AAD4E92C265BFFD3001753E9 /* relic_pp_dbl_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E810265BFFD2001753E9 /* relic_pp_dbl_k54.c */; };
+		AAD4E92D265BFFD3001753E9 /* relic_bn_shift.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E811265BFFD2001753E9 /* relic_bn_shift.c */; };
+		AAD4E92E265BFFD3001753E9 /* relic_fp_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E812265BFFD2001753E9 /* relic_fp_add_low.c */; };
+		AAD4E92F265BFFD3001753E9 /* relic_bn_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E813265BFFD2001753E9 /* relic_bn_sqr_low.c */; };
+		AAD4E930265BFFD3001753E9 /* relic_eb_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E814265BFFD2001753E9 /* relic_eb_util.c */; };
+		AAD4E931265BFFD3001753E9 /* relic_fp24_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E815265BFFD2001753E9 /* relic_fp24_mul.c */; };
+		AAD4E932265BFFD3001753E9 /* relic_ep_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E816265BFFD2001753E9 /* relic_ep_param.c */; };
+		AAD4E933265BFFD3001753E9 /* relic_fp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E817265BFFD2001753E9 /* relic_fp_util.c */; };
+		AAD4E934265BFFD3001753E9 /* relic_fb_slv_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E818265BFFD2001753E9 /* relic_fb_slv_low.c */; };
+		AAD4E935265BFFD3001753E9 /* relic_ep_psi.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E819265BFFD2001753E9 /* relic_ep_psi.c */; };
+		AAD4E936265BFFD3001753E9 /* relic_fpx_frb.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E81A265BFFD2001753E9 /* relic_fpx_frb.c */; };
+		AAD4E937265BFFD3001753E9 /* relic_ep_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E81B265BFFD2001753E9 /* relic_ep_cmp.c */; };
+		AAD4E938265BFFD3001753E9 /* relic_bn_div.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E81C265BFFD2001753E9 /* relic_bn_div.c */; };
+		AAD4E939265BFFD3001753E9 /* relic_ep_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E81D265BFFD2001753E9 /* relic_ep_add.c */; };
+		AAD4E93A265BFFD3001753E9 /* sha224-256.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E81E265BFFD2001753E9 /* sha224-256.c */; };
+		AAD4E93B265BFFD3001753E9 /* relic_bn_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E81F265BFFD2001753E9 /* relic_bn_inv.c */; };
+		AAD4E93C265BFFD3001753E9 /* relic_fb_shift_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E820265BFFD2001753E9 /* relic_fb_shift_low.c */; };
+		AAD4E93D265BFFD3001753E9 /* relic_ep_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E821265BFFD2001753E9 /* relic_ep_pck.c */; };
+		AAD4E93E265BFFD3001753E9 /* relic_ep_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E822265BFFD2001753E9 /* relic_ep_curve.c */; };
+		AAD4E93F265BFFD3001753E9 /* relic_fp_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E823265BFFD2001753E9 /* relic_fp_inv.c */; };
+		AAD4E940265BFFD3001753E9 /* relic_fp_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E824265BFFD2001753E9 /* relic_fp_prime.c */; };
+		AAD4E941265BFFD3001753E9 /* relic_eb_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E825265BFFD2001753E9 /* relic_eb_neg.c */; };
+		AAD4E942265BFFD3001753E9 /* relic_cp_ecies.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E826265BFFD2001753E9 /* relic_cp_ecies.c */; };
+		AAD4E943265BFFD3001753E9 /* relic_eb_frb.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E827265BFFD2001753E9 /* relic_eb_frb.c */; };
+		AAD4E944265BFFD3001753E9 /* relic_cp_cmlhs.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E828265BFFD2001753E9 /* relic_cp_cmlhs.c */; };
+		AAD4E945265BFFD3001753E9 /* relic_pp_add_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E829265BFFD2001753E9 /* relic_pp_add_k54.c */; };
+		AAD4E946265BFFD3001753E9 /* relic_fp24_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E82A265BFFD2001753E9 /* relic_fp24_sqr.c */; };
+		AAD4E947265BFFD3001753E9 /* lzcnt.inc in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E82B265BFFD2001753E9 /* lzcnt.inc */; };
+		AAD4E948265BFFD3001753E9 /* relic_bn_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E82C265BFFD2001753E9 /* relic_bn_mul.c */; };
+		AAD4E949265BFFD3001753E9 /* relic_fp8_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E82D265BFFD2001753E9 /* relic_fp8_sqr.c */; };
+		AAD4E94A265BFFD3001753E9 /* relic_bn_gcd.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E82E265BFFD2001753E9 /* relic_bn_gcd.c */; };
+		AAD4E94B265BFFD3001753E9 /* relic_cp_bdpe.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E82F265BFFD2001753E9 /* relic_cp_bdpe.c */; };
+		AAD4E94C265BFFD3001753E9 /* relic_mt_mpc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E830265BFFD2001753E9 /* relic_mt_mpc.c */; };
+		AAD4E94D265BFFD3001753E9 /* relic_pp_map_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E831265BFFD2001753E9 /* relic_pp_map_k48.c */; };
+		AAD4E94E265BFFD3001753E9 /* relic_fp_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E832265BFFD2001753E9 /* relic_fp_mul.c */; };
+		AAD4E94F265BFFD3001753E9 /* relic_fpx_field.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E833265BFFD2001753E9 /* relic_fpx_field.c */; };
+		AAD4E950265BFFD3001753E9 /* relic_fb_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E834265BFFD2001753E9 /* relic_fb_add_low.c */; };
+		AAD4E951265BFFD3001753E9 /* relic_ep_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E835265BFFD2001753E9 /* relic_ep_dbl.c */; };
+		AAD4E952265BFFD3001753E9 /* relic_err.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E836265BFFD2001753E9 /* relic_err.c */; };
+		AAD4E953265BFFD3001753E9 /* relic_cp_bbs.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E837265BFFD2001753E9 /* relic_cp_bbs.c */; };
+		AAD4E954265BFFD3001753E9 /* relic_pc_mpc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E838265BFFD2001753E9 /* relic_pc_mpc.c */; };
+		AAD4E955265BFFD3001753E9 /* relic_cp_ecmqv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E839265BFFD2001753E9 /* relic_cp_ecmqv.c */; };
+		AAD4E956265BFFD3001753E9 /* relic_pp_map_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E83A265BFFD2001753E9 /* relic_pp_map_k8.c */; };
+		AAD4E957265BFFD3001753E9 /* relic_ed_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E83B265BFFD2001753E9 /* relic_ed_mul.c */; };
+		AAD4E958265BFFD3001753E9 /* relic_pp_dbl_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E83C265BFFD2001753E9 /* relic_pp_dbl_k2.c */; };
+		AAD4E959265BFFD3001753E9 /* relic_fpx_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E83D265BFFD2001753E9 /* relic_fpx_exp.c */; };
+		AAD4E95A265BFFD3001753E9 /* relic_fp_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E83E265BFFD2001753E9 /* relic_fp_srt.c */; };
+		AAD4E95B265BFFD3001753E9 /* relic_pp_map_k2.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E83F265BFFD2001753E9 /* relic_pp_map_k2.c */; };
+		AAD4E95C265BFFD3001753E9 /* relic_cp_vbnn.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E840265BFFD2001753E9 /* relic_cp_vbnn.c */; };
+		AAD4E95D265BFFD3001753E9 /* relic_pp_dbl_k8.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E841265BFFD2001753E9 /* relic_pp_dbl_k8.c */; };
+		AAD4E95E265BFFD3001753E9 /* relic_bn_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E842265BFFD2001753E9 /* relic_bn_srt.c */; };
+		AAD4E95F265BFFD3001753E9 /* relic_ep_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E843265BFFD2001753E9 /* relic_ep_map.c */; };
+		AAD4E960265BFFD3001753E9 /* relic_pp_exp_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E844265BFFD2001753E9 /* relic_pp_exp_k54.c */; };
+		AAD4E961265BFFD3001753E9 /* relic_bn_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E845265BFFD2001753E9 /* relic_bn_mul_low.c */; };
+		AAD4E962265BFFD3001753E9 /* relic_fpx_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E846265BFFD2001753E9 /* relic_fpx_sqr_low.c */; };
+		AAD4E963265BFFD3001753E9 /* relic_fb_rdc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E847265BFFD2001753E9 /* relic_fb_rdc.c */; };
+		AAD4E964265BFFD3001753E9 /* relic_fb_srt_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E848265BFFD2001753E9 /* relic_fb_srt_low.c */; };
+		AAD4E965265BFFD3001753E9 /* relic_ep2_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E849265BFFD2001753E9 /* relic_ep2_norm.c */; };
+		AAD4E966265BFFD3001753E9 /* relic_fb_itr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E84A265BFFD2001753E9 /* relic_fb_itr.c */; };
+		AAD4E967265BFFD3001753E9 /* relic_fpx_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E84B265BFFD2001753E9 /* relic_fpx_inv.c */; };
+		AAD4E968265BFFD3001753E9 /* relic_pp_map_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E84C265BFFD2001753E9 /* relic_pp_map_k12.c */; };
+		AAD4E969265BFFD3001753E9 /* relic_cp_mpss.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E84D265BFFD2001753E9 /* relic_cp_mpss.c */; };
+		AAD4E96A265BFFD3001753E9 /* relic_ep2_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E84E265BFFD2001753E9 /* relic_ep2_util.c */; };
+		AAD4E96B265BFFD3001753E9 /* relic_ep2_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E84F265BFFD2001753E9 /* relic_ep2_mul_fix.c */; };
+		AAD4E96C265BFFD3001753E9 /* relic_ed_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E850265BFFD2001753E9 /* relic_ed_util.c */; };
+		AAD4E96D265BFFD3001753E9 /* relic_md_hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E851265BFFD2001753E9 /* relic_md_hmac.c */; };
+		AAD4E96E265BFFD3001753E9 /* relic_fb_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E852265BFFD2001753E9 /* relic_fb_poly.c */; };
+		AAD4E96F265BFFD3001753E9 /* relic_ep_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E853265BFFD2001753E9 /* relic_ep_norm.c */; };
+		AAD4E970265BFFD3001753E9 /* relic_fp9_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E854265BFFD3001753E9 /* relic_fp9_mul.c */; };
+		AAD4E971265BFFD3001753E9 /* relic_eb_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E855265BFFD3001753E9 /* relic_eb_mul.c */; };
+		AAD4E972265BFFD3001753E9 /* relic_md_mgf.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E856265BFFD3001753E9 /* relic_md_mgf.c */; };
+		AAD4E973265BFFD3001753E9 /* relic_ep2_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E857265BFFD3001753E9 /* relic_ep2_pck.c */; };
+		AAD4E974265BFFD3001753E9 /* relic_pp_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E858265BFFD3001753E9 /* relic_pp_norm.c */; };
+		AAD4E975265BFFD3001753E9 /* relic_ed_norm.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E859265BFFD3001753E9 /* relic_ed_norm.c */; };
+		AAD4E976265BFFD3001753E9 /* sha384-512.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E85A265BFFD3001753E9 /* sha384-512.c */; };
+		AAD4E977265BFFD3001753E9 /* relic_ep_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E85B265BFFD3001753E9 /* relic_ep_util.c */; };
+		AAD4E978265BFFD3001753E9 /* relic_fp18_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E85C265BFFD3001753E9 /* relic_fp18_mul.c */; };
+		AAD4E979265BFFD3001753E9 /* relic_ep2_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E85D265BFFD3001753E9 /* relic_ep2_cmp.c */; };
+		AAD4E97A265BFFD3001753E9 /* relic_ep2_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E85E265BFFD3001753E9 /* relic_ep2_add.c */; };
+		AAD4E97B265BFFD3001753E9 /* relic_fb_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E85F265BFFD3001753E9 /* relic_fb_util.c */; };
+		AAD4E97C265BFFD3001753E9 /* relic_bn_div_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E860265BFFD3001753E9 /* relic_bn_div_low.c */; };
+		AAD4E97D265BFFD3001753E9 /* relic_ed_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E861265BFFD3001753E9 /* relic_ed_cmp.c */; };
+		AAD4E97E265BFFD3001753E9 /* relic_ed_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E862265BFFD3001753E9 /* relic_ed_add.c */; };
+		AAD4E97F265BFFD3001753E9 /* relic_pp_dbl_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E863265BFFD3001753E9 /* relic_pp_dbl_k48.c */; };
+		AAD4E980265BFFD3001753E9 /* relic_fp54_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E864265BFFD3001753E9 /* relic_fp54_sqr.c */; };
+		AAD4E981265BFFD3001753E9 /* relic_fb_slv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E865265BFFD3001753E9 /* relic_fb_slv.c */; };
+		AAD4E982265BFFD3001753E9 /* relic_bn_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E866265BFFD3001753E9 /* relic_bn_add_low.c */; };
+		AAD4E983265BFFD3001753E9 /* relic_fp_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E867265BFFD3001753E9 /* relic_fp_sqr_low.c */; };
+		AAD4E984265BFFD3001753E9 /* relic_fp48_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E868265BFFD3001753E9 /* relic_fp48_mul.c */; };
+		AAD4E985265BFFD3001753E9 /* relic_ed_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E869265BFFD3001753E9 /* relic_ed_pck.c */; };
+		AAD4E986265BFFD3001753E9 /* relic_fp_shift.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E86A265BFFD3001753E9 /* relic_fp_shift.c */; };
+		AAD4E987265BFFD3001753E9 /* relic_ed_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E86B265BFFD3001753E9 /* relic_ed_mul_fix.c */; };
+		AAD4E988265BFFD3001753E9 /* relic_fb_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E86C265BFFD3001753E9 /* relic_fb_exp.c */; };
+		AAD4E989265BFFD3001753E9 /* relic_fp2_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E86D265BFFD3001753E9 /* relic_fp2_sqr.c */; };
+		AAD4E98A265BFFD3001753E9 /* rijndael-api-fst.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E86E265BFFD3001753E9 /* rijndael-api-fst.c */; };
+		AAD4E98B265BFFD3001753E9 /* relic_fb_rdc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E86F265BFFD3001753E9 /* relic_fb_rdc_low.c */; };
+		AAD4E98C265BFFD3001753E9 /* relic_fp_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E870265BFFD3001753E9 /* relic_fp_add.c */; };
+		AAD4E98D265BFFD3001753E9 /* relic_fp_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E871265BFFD3001753E9 /* relic_fp_cmp.c */; };
+		AAD4E98E265BFFD3001753E9 /* relic_cp_bgn.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E872265BFFD3001753E9 /* relic_cp_bgn.c */; };
+		AAD4E98F265BFFD3001753E9 /* relic_bn_prime.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E873265BFFD3001753E9 /* relic_bn_prime.c */; };
+		AAD4E990265BFFD3001753E9 /* relic_bn_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E874265BFFD3001753E9 /* relic_bn_cmp.c */; };
+		AAD4E991265BFFD3001753E9 /* relic_fb_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E875265BFFD3001753E9 /* relic_fb_mul_low.c */; };
+		AAD4E992265BFFD3001753E9 /* relic_bn_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E876265BFFD3001753E9 /* relic_bn_add.c */; };
+		AAD4E993265BFFD3001753E9 /* relic_fp_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E877265BFFD3001753E9 /* relic_fp_param.c */; };
+		AAD4E994265BFFD3001753E9 /* relic_ep2_frb.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E878265BFFD3001753E9 /* relic_ep2_frb.c */; };
+		AAD4E995265BFFD3001753E9 /* relic_bn_factor.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E879265BFFD3001753E9 /* relic_bn_factor.c */; };
+		AAD4E996265BFFD3001753E9 /* relic_bn_smb.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E87A265BFFD3001753E9 /* relic_bn_smb.c */; };
+		AAD4E997265BFFD3001753E9 /* relic_cp_rabin.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E87B265BFFD3001753E9 /* relic_cp_rabin.c */; };
+		AAD4E998265BFFD3001753E9 /* relic_fp12_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E87C265BFFD3001753E9 /* relic_fp12_mul.c */; };
+		AAD4E999265BFFD3001753E9 /* relic_md_xmd.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E87D265BFFD3001753E9 /* relic_md_xmd.c */; };
+		AAD4E99A265BFFD3001753E9 /* relic_core.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E87E265BFFD3001753E9 /* relic_core.c */; };
+		AAD4E99B265BFFD3001753E9 /* relic_bn_mod_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E87F265BFFD3001753E9 /* relic_bn_mod_low.c */; };
+		AAD4E99C265BFFD3001753E9 /* relic_eb_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E880265BFFD3001753E9 /* relic_eb_curve.c */; };
+		AAD4E99D265BFFD3001753E9 /* relic_fpx_rdc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E881265BFFD3001753E9 /* relic_fpx_rdc.c */; };
+		AAD4E99E265BFFD3001753E9 /* relic_fb_itr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E882265BFFD3001753E9 /* relic_fb_itr_low.c */; };
+		AAD4E99F265BFFD3001753E9 /* relic_fb_inv_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E883265BFFD3001753E9 /* relic_fb_inv_low.c */; };
+		AAD4E9A0265BFFD3001753E9 /* relic_cp_ibe.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E884265BFFD3001753E9 /* relic_cp_ibe.c */; };
+		AAD4E9A1265BFFD3001753E9 /* relic_pp_dbl_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E885265BFFD3001753E9 /* relic_pp_dbl_k12.c */; };
+		AAD4E9A2265BFFD3001753E9 /* relic_eb_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E886265BFFD3001753E9 /* relic_eb_cmp.c */; };
+		AAD4E9A3265BFFD3001753E9 /* relic_eb_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E887265BFFD3001753E9 /* relic_eb_add.c */; };
+		AAD4E9A4265BFFD3001753E9 /* relic_ep2_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E888265BFFD3001753E9 /* relic_ep2_mul.c */; };
+		AAD4E9A5265BFFD3001753E9 /* relic_fp3_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E889265BFFD3001753E9 /* relic_fp3_mul.c */; };
+		AAD4E9A6265BFFD3001753E9 /* relic_fp6_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E88A265BFFD3001753E9 /* relic_fp6_sqr.c */; };
+		AAD4E9A7265BFFD3001753E9 /* relic_fb_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E88B265BFFD3001753E9 /* relic_fb_inv.c */; };
+		AAD4E9A8265BFFD3001753E9 /* relic_eb_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E88C265BFFD3001753E9 /* relic_eb_pck.c */; };
+		AAD4E9A9265BFFD3001753E9 /* relic_ep_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E88D265BFFD3001753E9 /* relic_ep_neg.c */; };
+		AAD4E9AA265BFFD3001753E9 /* relic_fpx_cyc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E88E265BFFD3001753E9 /* relic_fpx_cyc.c */; };
+		AAD4E9AB265BFFD3001753E9 /* relic_fp_shift_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E88F265BFFD3001753E9 /* relic_fp_shift_low.c */; };
+		AAD4E9AC265BFFD3001753E9 /* relic_fb2_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E890265BFFD3001753E9 /* relic_fb2_mul.c */; };
+		AAD4E9AD265BFFD3001753E9 /* relic_md_sha224.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E891265BFFD3001753E9 /* relic_md_sha224.c */; };
+		AAD4E9AE265BFFD3001753E9 /* relic_bn_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E892265BFFD3001753E9 /* relic_bn_util.c */; };
+		AAD4E9AF265BFFD3001753E9 /* relic_cp_ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E893265BFFD3001753E9 /* relic_cp_ecdsa.c */; };
+		AAD4E9B0265BFFD3001753E9 /* relic_md_blake2s.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E894265BFFD3001753E9 /* relic_md_blake2s.c */; };
+		AAD4E9B1265BFFD3001753E9 /* relic_eb_param.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E895265BFFD3001753E9 /* relic_eb_param.c */; };
+		AAD4E9B2265BFFD3001753E9 /* relic_pc_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E896265BFFD3001753E9 /* relic_pc_util.c */; };
+		AAD4E9B3265BFFD3001753E9 /* relic_fb_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E897265BFFD3001753E9 /* relic_fb_sqr.c */; };
+		AAD4E9B4265BFFD3001753E9 /* relic_fp4_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E898265BFFD3001753E9 /* relic_fp4_sqr.c */; };
+		AAD4E9B5265BFFD3001753E9 /* relic_md_kdf.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E899265BFFD3001753E9 /* relic_md_kdf.c */; };
+		AAD4E9B6265BFFD3001753E9 /* relic_eb_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E89A265BFFD3001753E9 /* relic_eb_mul_fix.c */; };
+		AAD4E9B7265BFFD3001753E9 /* relic_ep_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E89B265BFFD3001753E9 /* relic_ep_mul_sim.c */; };
+		AAD4E9B8265BFFD3001753E9 /* relic_fp_inv_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E89C265BFFD3001753E9 /* relic_fp_inv_low.c */; };
+		AAD4E9B9265BFFD3001753E9 /* relic_fpx_add_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E89D265BFFD3001753E9 /* relic_fpx_add_low.c */; };
+		AAD4E9BA265BFFD3001753E9 /* relic_rand_hashd.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E89E265BFFD3001753E9 /* relic_rand_hashd.c */; };
+		AAD4E9BB265BFFD3001753E9 /* relic_bn_rec.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E89F265BFFD3001753E9 /* relic_bn_rec.c */; };
+		AAD4E9BC265BFFD3001753E9 /* relic_fb2_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A0265BFFD3001753E9 /* relic_fb2_sqr.c */; };
+		AAD4E9BD265BFFD3001753E9 /* relic_pp_add_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A1265BFFD3001753E9 /* relic_pp_add_k12.c */; };
+		AAD4E9BE265BFFD3001753E9 /* relic_fp3_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A2265BFFD3001753E9 /* relic_fp3_sqr.c */; };
+		AAD4E9BF265BFFD3001753E9 /* relic_fp6_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A3265BFFD3001753E9 /* relic_fp6_mul.c */; };
+		AAD4E9C0265BFFD3001753E9 /* relic_fpx_pck.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A4265BFFD3001753E9 /* relic_fpx_pck.c */; };
+		AAD4E9C1265BFFD3001753E9 /* relic_fb_srt.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A5265BFFD3001753E9 /* relic_fb_srt.c */; };
+		AAD4E9C2265BFFD3001753E9 /* relic_fpx_add.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A6265BFFD3001753E9 /* relic_fpx_add.c */; };
+		AAD4E9C3265BFFD3001753E9 /* relic_fpx_cmp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A7265BFFD3001753E9 /* relic_fpx_cmp.c */; };
+		AAD4E9C4265BFFD3001753E9 /* relic_fpx_util.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A8265BFFD3001753E9 /* relic_fpx_util.c */; };
+		AAD4E9C5265BFFD3001753E9 /* relic_pp_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8A9265BFFD3001753E9 /* relic_pp_map.c */; };
+		AAD4E9C6265BFFD3001753E9 /* relic_md_sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8AA265BFFD3001753E9 /* relic_md_sha256.c */; };
+		AAD4E9C7265BFFD3001753E9 /* relic_fp12_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8AB265BFFD3001753E9 /* relic_fp12_sqr.c */; };
+		AAD4E9C8265BFFD3001753E9 /* relic_bn_mxp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8AC265BFFD3001753E9 /* relic_bn_mxp.c */; };
+		AAD4E9C9265BFFD3001753E9 /* relic_eb_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8AD265BFFD3001753E9 /* relic_eb_map.c */; };
+		AAD4E9CA265BFFD3001753E9 /* relic_bn_shift_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8AE265BFFD3001753E9 /* relic_bn_shift_low.c */; };
+		AAD4E9CB265BFFD3001753E9 /* relic_cp_ecdh.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8AF265BFFD3001753E9 /* relic_cp_ecdh.c */; };
+		AAD4E9CC265BFFD3001753E9 /* relic_cp_pss.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B0265BFFD3001753E9 /* relic_cp_pss.c */; };
+		AAD4E9CD265BFFD3001753E9 /* relic_eb_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B1265BFFD3001753E9 /* relic_eb_mul_sim.c */; };
+		AAD4E9CE265BFFD3001753E9 /* relic_fb_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B2265BFFD3001753E9 /* relic_fb_mul.c */; };
+		AAD4E9CF265BFFD3001753E9 /* relic_fp4_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B3265BFFD3001753E9 /* relic_fp4_mul.c */; };
+		AAD4E9D0265BFFD3001753E9 /* relic_eb_hlv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B4265BFFD3001753E9 /* relic_eb_hlv.c */; };
+		AAD4E9D1265BFFD3001753E9 /* relic_bn_lcm.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B5265BFFD3001753E9 /* relic_bn_lcm.c */; };
+		AAD4E9D2265BFFD3001753E9 /* relic_cp_phpe.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B6265BFFD3001753E9 /* relic_cp_phpe.c */; };
+		AAD4E9D3265BFFD3001753E9 /* relic_pp_exp_k12.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B7265BFFD3001753E9 /* relic_pp_exp_k12.c */; };
+		AAD4E9D4265BFFD3001753E9 /* relic_cp_ecss.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B8265BFFD3001753E9 /* relic_cp_ecss.c */; };
+		AAD4E9D5265BFFD3001753E9 /* relic_ep_mul_fix.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8B9265BFFD3001753E9 /* relic_ep_mul_fix.c */; };
+		AAD4E9D6265BFFD3001753E9 /* relic_eb_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8BA265BFFD3001753E9 /* relic_eb_dbl.c */; };
+		AAD4E9D7265BFFD3001753E9 /* relic_fb2_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8BB265BFFD3001753E9 /* relic_fb2_inv.c */; };
+		AAD4E9D8265BFFD3001753E9 /* relic_cp_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8BC265BFFD3001753E9 /* relic_cp_rsa.c */; };
+		AAD4E9D9265BFFD3001753E9 /* relic_fp48_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8BD265BFFD3001753E9 /* relic_fp48_sqr.c */; };
+		AAD4E9DA265BFFD3001753E9 /* relic_ep2_neg.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8BE265BFFD3001753E9 /* relic_ep2_neg.c */; };
+		AAD4E9DB265BFFD3001753E9 /* relic_pp_add_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8BF265BFFD3001753E9 /* relic_pp_add_k48.c */; };
+		AAD4E9DC265BFFD3001753E9 /* relic_ep_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C0265BFFD3001753E9 /* relic_ep_mul.c */; };
+		AAD4E9DD265BFFD3001753E9 /* relic_rand_core.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C1265BFFD3001753E9 /* relic_rand_core.c */; };
+		AAD4E9DE265BFFD3001753E9 /* relic_ed_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C2265BFFD3001753E9 /* relic_ed_map.c */; };
+		AAD4E9DF265BFFD3001753E9 /* relic_fp54_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C3265BFFD3001753E9 /* relic_fp54_mul.c */; };
+		AAD4E9E0265BFFD3001753E9 /* relic_md_sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C4265BFFD3001753E9 /* relic_md_sha512.c */; };
+		AAD4E9E1265BFFD3001753E9 /* relic_fb_sqr_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C5265BFFD3001753E9 /* relic_fb_sqr_low.c */; };
+		AAD4E9E2265BFFD3001753E9 /* relic_pp_map_k54.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C6265BFFD3001753E9 /* relic_pp_map_k54.c */; };
+		AAD4E9E3265BFFD3001753E9 /* relic_cp_mklhs.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C7265BFFD3001753E9 /* relic_cp_mklhs.c */; };
+		AAD4E9E4265BFFD3001753E9 /* relic_fb2_slv.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C8265BFFD3001753E9 /* relic_fb2_slv.c */; };
+		AAD4E9E5265BFFD3001753E9 /* relic_bc_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8C9265BFFD3001753E9 /* relic_bc_aes.c */; };
+		AAD4E9E6265BFFD3001753E9 /* relic_fp_rdc_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8CA265BFFD3001753E9 /* relic_fp_rdc_low.c */; };
+		AAD4E9E7265BFFD3001753E9 /* relic_ed_mul_sim.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8CB265BFFD3001753E9 /* relic_ed_mul_sim.c */; };
+		AAD4E9E8265BFFD3001753E9 /* relic_fp_rdc.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8CC265BFFD3001753E9 /* relic_fp_rdc.c */; };
+		AAD4E9E9265BFFD3001753E9 /* relic_conf.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8CD265BFFD3001753E9 /* relic_conf.c */; };
+		AAD4E9EA265BFFD3001753E9 /* relic_ed_dbl.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8CE265BFFD3001753E9 /* relic_ed_dbl.c */; };
+		AAD4E9EB265BFFD4001753E9 /* relic_arch_x64.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8CF265BFFD3001753E9 /* relic_arch_x64.c */; };
+		AAD4E9EC265BFFD4001753E9 /* relic_ep2_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D0265BFFD3001753E9 /* relic_ep2_curve.c */; };
+		AAD4E9ED265BFFD4001753E9 /* relic_pc_exp.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D1265BFFD3001753E9 /* relic_pc_exp.c */; };
+		AAD4E9EE265BFFD4001753E9 /* relic_md_sha384.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D2265BFFD3001753E9 /* relic_md_sha384.c */; };
+		AAD4E9EF265BFFD4001753E9 /* relic_pp_exp_k48.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D3265BFFD3001753E9 /* relic_pp_exp_k48.c */; };
+		AAD4E9F0265BFFD4001753E9 /* relic_cp_sokaka.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D4265BFFD3001753E9 /* relic_cp_sokaka.c */; };
+		AAD4E9F1265BFFD4001753E9 /* relic_fp_mul_low.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D5265BFFD3001753E9 /* relic_fp_mul_low.c */; };
+		AAD4E9F2265BFFD4001753E9 /* relic_fp2_mul.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E8D6265BFFD3001753E9 /* relic_fp2_mul.c */; };
+		AAD4EA01265C0004001753E9 /* bls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E9F4265C0004001753E9 /* bls.cpp */; };
+		AAD4EA02265C0004001753E9 /* elements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E9F5265C0004001753E9 /* elements.cpp */; };
+		AAD4EA03265C0004001753E9 /* privatekey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E9F6265C0004001753E9 /* privatekey.cpp */; };
+		AAD4EA04265C0004001753E9 /* schemes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E9F7265C0004001753E9 /* schemes.cpp */; };
+		AAD4EA09265C0035001753E9 /* librelic_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD4E7E0265BFFB4001753E9 /* librelic_s.a */; };
+		AAD4EA0A265C0038001753E9 /* libbls.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD4E7D4265BFFA8001753E9 /* libbls.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAD4EA05265C002E001753E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD4E7D3265BFFA8001753E9;
+			remoteInfo = bls;
+		};
+		AAD4EA07265C0030001753E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD4E7DF265BFFB4001753E9;
+			remoteInfo = relic_s;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
@@ -25,6 +286,24 @@
 			files = (
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E7D2265BFFA8001753E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E7DE265BFFB4001753E9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -45,6 +324,302 @@
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D4E2A6827A39C7393186DE /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		AAD4E7D4265BFFA8001753E9 /* libbls.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbls.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD4E7E0265BFFB4001753E9 /* librelic_s.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librelic_s.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD4E7E9265BFFD2001753E9 /* relic_ep2_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_dbl.c; sourceTree = "<group>"; };
+		AAD4E7EA265BFFD2001753E9 /* relic_fp_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_exp.c; sourceTree = "<group>"; };
+		AAD4E7EB265BFFD2001753E9 /* relic_dv_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_dv_mem.c; sourceTree = "<group>"; };
+		AAD4E7EC265BFFD2001753E9 /* relic_fpx_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_srt.c; sourceTree = "<group>"; };
+		AAD4E7ED265BFFD2001753E9 /* relic_fb_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_param.c; sourceTree = "<group>"; };
+		AAD4E7EE265BFFD2001753E9 /* relic_fb_trc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_trc_low.c; sourceTree = "<group>"; };
+		AAD4E7EF265BFFD2001753E9 /* relic_cp_zss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_zss.c; sourceTree = "<group>"; };
+		AAD4E7F0265BFFD2001753E9 /* relic_pp_add_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k8.c; sourceTree = "<group>"; };
+		AAD4E7F1265BFFD2001753E9 /* relic_fb_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_add.c; sourceTree = "<group>"; };
+		AAD4E7F2265BFFD2001753E9 /* relic_fb_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_cmp.c; sourceTree = "<group>"; };
+		AAD4E7F3265BFFD2001753E9 /* relic_pp_add_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k2.c; sourceTree = "<group>"; };
+		AAD4E7F4265BFFD2001753E9 /* relic_ep2_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul_sim.c; sourceTree = "<group>"; };
+		AAD4E7F5265BFFD2001753E9 /* relic_ed_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_curve.c; sourceTree = "<group>"; };
+		AAD4E7F6265BFFD2001753E9 /* relic_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_util.c; sourceTree = "<group>"; };
+		AAD4E7F7265BFFD2001753E9 /* relic_dv_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_dv_util.c; sourceTree = "<group>"; };
+		AAD4E7F8265BFFD2001753E9 /* relic_ep2_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_map.c; sourceTree = "<group>"; };
+		AAD4E7F9265BFFD2001753E9 /* rijndael-alg-fst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "rijndael-alg-fst.c"; sourceTree = "<group>"; };
+		AAD4E7FA265BFFD2001753E9 /* blake2s-ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "blake2s-ref.c"; sourceTree = "<group>"; };
+		AAD4E7FB265BFFD2001753E9 /* relic_cp_cls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_cls.c; sourceTree = "<group>"; };
+		AAD4E7FC265BFFD2001753E9 /* relic_fp18_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp18_sqr.c; sourceTree = "<group>"; };
+		AAD4E7FD265BFFD2001753E9 /* relic_fb_shift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_shift.c; sourceTree = "<group>"; };
+		AAD4E7FE265BFFD2001753E9 /* relic_fpx_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_mul_low.c; sourceTree = "<group>"; };
+		AAD4E7FF265BFFD2001753E9 /* relic_bn_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mem.c; sourceTree = "<group>"; };
+		AAD4E800265BFFD2001753E9 /* relic_cp_ghpe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ghpe.c; sourceTree = "<group>"; };
+		AAD4E801265BFFD2001753E9 /* relic_ed_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_neg.c; sourceTree = "<group>"; };
+		AAD4E802265BFFD2001753E9 /* relic_cp_bls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bls.c; sourceTree = "<group>"; };
+		AAD4E803265BFFD2001753E9 /* relic_pc_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_core.c; sourceTree = "<group>"; };
+		AAD4E804265BFFD2001753E9 /* relic_fb_trc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_trc.c; sourceTree = "<group>"; };
+		AAD4E805265BFFD2001753E9 /* relic_ed_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_param.c; sourceTree = "<group>"; };
+		AAD4E806265BFFD2001753E9 /* relic_fpx_rdc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_rdc_low.c; sourceTree = "<group>"; };
+		AAD4E807265BFFD2001753E9 /* relic_fp9_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp9_sqr.c; sourceTree = "<group>"; };
+		AAD4E808265BFFD2001753E9 /* relic_bn_mod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mod.c; sourceTree = "<group>"; };
+		AAD4E809265BFFD2001753E9 /* relic_pp_exp_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k2.c; sourceTree = "<group>"; };
+		AAD4E80A265BFFD2001753E9 /* relic_eb_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_norm.c; sourceTree = "<group>"; };
+		AAD4E80B265BFFD2001753E9 /* relic_ep2_mul_cof.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul_cof.c; sourceTree = "<group>"; };
+		AAD4E80C265BFFD2001753E9 /* relic_pp_exp_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k8.c; sourceTree = "<group>"; };
+		AAD4E80D265BFFD2001753E9 /* relic_bn_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_sqr.c; sourceTree = "<group>"; };
+		AAD4E80E265BFFD2001753E9 /* relic_fp8_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp8_mul.c; sourceTree = "<group>"; };
+		AAD4E80F265BFFD2001753E9 /* relic_fp_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_sqr.c; sourceTree = "<group>"; };
+		AAD4E810265BFFD2001753E9 /* relic_pp_dbl_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k54.c; sourceTree = "<group>"; };
+		AAD4E811265BFFD2001753E9 /* relic_bn_shift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_shift.c; sourceTree = "<group>"; };
+		AAD4E812265BFFD2001753E9 /* relic_fp_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_add_low.c; sourceTree = "<group>"; };
+		AAD4E813265BFFD2001753E9 /* relic_bn_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_sqr_low.c; sourceTree = "<group>"; };
+		AAD4E814265BFFD2001753E9 /* relic_eb_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_util.c; sourceTree = "<group>"; };
+		AAD4E815265BFFD2001753E9 /* relic_fp24_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp24_mul.c; sourceTree = "<group>"; };
+		AAD4E816265BFFD2001753E9 /* relic_ep_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_param.c; sourceTree = "<group>"; };
+		AAD4E817265BFFD2001753E9 /* relic_fp_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_util.c; sourceTree = "<group>"; };
+		AAD4E818265BFFD2001753E9 /* relic_fb_slv_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_slv_low.c; sourceTree = "<group>"; };
+		AAD4E819265BFFD2001753E9 /* relic_ep_psi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_psi.c; sourceTree = "<group>"; };
+		AAD4E81A265BFFD2001753E9 /* relic_fpx_frb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_frb.c; sourceTree = "<group>"; };
+		AAD4E81B265BFFD2001753E9 /* relic_ep_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_cmp.c; sourceTree = "<group>"; };
+		AAD4E81C265BFFD2001753E9 /* relic_bn_div.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_div.c; sourceTree = "<group>"; };
+		AAD4E81D265BFFD2001753E9 /* relic_ep_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_add.c; sourceTree = "<group>"; };
+		AAD4E81E265BFFD2001753E9 /* sha224-256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha224-256.c"; sourceTree = "<group>"; };
+		AAD4E81F265BFFD2001753E9 /* relic_bn_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_inv.c; sourceTree = "<group>"; };
+		AAD4E820265BFFD2001753E9 /* relic_fb_shift_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_shift_low.c; sourceTree = "<group>"; };
+		AAD4E821265BFFD2001753E9 /* relic_ep_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_pck.c; sourceTree = "<group>"; };
+		AAD4E822265BFFD2001753E9 /* relic_ep_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_curve.c; sourceTree = "<group>"; };
+		AAD4E823265BFFD2001753E9 /* relic_fp_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_inv.c; sourceTree = "<group>"; };
+		AAD4E824265BFFD2001753E9 /* relic_fp_prime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_prime.c; sourceTree = "<group>"; };
+		AAD4E825265BFFD2001753E9 /* relic_eb_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_neg.c; sourceTree = "<group>"; };
+		AAD4E826265BFFD2001753E9 /* relic_cp_ecies.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecies.c; sourceTree = "<group>"; };
+		AAD4E827265BFFD2001753E9 /* relic_eb_frb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_frb.c; sourceTree = "<group>"; };
+		AAD4E828265BFFD2001753E9 /* relic_cp_cmlhs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_cmlhs.c; sourceTree = "<group>"; };
+		AAD4E829265BFFD2001753E9 /* relic_pp_add_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k54.c; sourceTree = "<group>"; };
+		AAD4E82A265BFFD2001753E9 /* relic_fp24_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp24_sqr.c; sourceTree = "<group>"; };
+		AAD4E82B265BFFD2001753E9 /* lzcnt.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = lzcnt.inc; sourceTree = "<group>"; };
+		AAD4E82C265BFFD2001753E9 /* relic_bn_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mul.c; sourceTree = "<group>"; };
+		AAD4E82D265BFFD2001753E9 /* relic_fp8_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp8_sqr.c; sourceTree = "<group>"; };
+		AAD4E82E265BFFD2001753E9 /* relic_bn_gcd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_gcd.c; sourceTree = "<group>"; };
+		AAD4E82F265BFFD2001753E9 /* relic_cp_bdpe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bdpe.c; sourceTree = "<group>"; };
+		AAD4E830265BFFD2001753E9 /* relic_mt_mpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_mt_mpc.c; sourceTree = "<group>"; };
+		AAD4E831265BFFD2001753E9 /* relic_pp_map_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k48.c; sourceTree = "<group>"; };
+		AAD4E832265BFFD2001753E9 /* relic_fp_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_mul.c; sourceTree = "<group>"; };
+		AAD4E833265BFFD2001753E9 /* relic_fpx_field.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_field.c; sourceTree = "<group>"; };
+		AAD4E834265BFFD2001753E9 /* relic_fb_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_add_low.c; sourceTree = "<group>"; };
+		AAD4E835265BFFD2001753E9 /* relic_ep_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_dbl.c; sourceTree = "<group>"; };
+		AAD4E836265BFFD2001753E9 /* relic_err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_err.c; sourceTree = "<group>"; };
+		AAD4E837265BFFD2001753E9 /* relic_cp_bbs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bbs.c; sourceTree = "<group>"; };
+		AAD4E838265BFFD2001753E9 /* relic_pc_mpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_mpc.c; sourceTree = "<group>"; };
+		AAD4E839265BFFD2001753E9 /* relic_cp_ecmqv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecmqv.c; sourceTree = "<group>"; };
+		AAD4E83A265BFFD2001753E9 /* relic_pp_map_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k8.c; sourceTree = "<group>"; };
+		AAD4E83B265BFFD2001753E9 /* relic_ed_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_mul.c; sourceTree = "<group>"; };
+		AAD4E83C265BFFD2001753E9 /* relic_pp_dbl_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k2.c; sourceTree = "<group>"; };
+		AAD4E83D265BFFD2001753E9 /* relic_fpx_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_exp.c; sourceTree = "<group>"; };
+		AAD4E83E265BFFD2001753E9 /* relic_fp_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_srt.c; sourceTree = "<group>"; };
+		AAD4E83F265BFFD2001753E9 /* relic_pp_map_k2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k2.c; sourceTree = "<group>"; };
+		AAD4E840265BFFD2001753E9 /* relic_cp_vbnn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_vbnn.c; sourceTree = "<group>"; };
+		AAD4E841265BFFD2001753E9 /* relic_pp_dbl_k8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k8.c; sourceTree = "<group>"; };
+		AAD4E842265BFFD2001753E9 /* relic_bn_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_srt.c; sourceTree = "<group>"; };
+		AAD4E843265BFFD2001753E9 /* relic_ep_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_map.c; sourceTree = "<group>"; };
+		AAD4E844265BFFD2001753E9 /* relic_pp_exp_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k54.c; sourceTree = "<group>"; };
+		AAD4E845265BFFD2001753E9 /* relic_bn_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mul_low.c; sourceTree = "<group>"; };
+		AAD4E846265BFFD2001753E9 /* relic_fpx_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_sqr_low.c; sourceTree = "<group>"; };
+		AAD4E847265BFFD2001753E9 /* relic_fb_rdc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_rdc.c; sourceTree = "<group>"; };
+		AAD4E848265BFFD2001753E9 /* relic_fb_srt_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_srt_low.c; sourceTree = "<group>"; };
+		AAD4E849265BFFD2001753E9 /* relic_ep2_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_norm.c; sourceTree = "<group>"; };
+		AAD4E84A265BFFD2001753E9 /* relic_fb_itr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_itr.c; sourceTree = "<group>"; };
+		AAD4E84B265BFFD2001753E9 /* relic_fpx_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_inv.c; sourceTree = "<group>"; };
+		AAD4E84C265BFFD2001753E9 /* relic_pp_map_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k12.c; sourceTree = "<group>"; };
+		AAD4E84D265BFFD2001753E9 /* relic_cp_mpss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_mpss.c; sourceTree = "<group>"; };
+		AAD4E84E265BFFD2001753E9 /* relic_ep2_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_util.c; sourceTree = "<group>"; };
+		AAD4E84F265BFFD2001753E9 /* relic_ep2_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul_fix.c; sourceTree = "<group>"; };
+		AAD4E850265BFFD2001753E9 /* relic_ed_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_util.c; sourceTree = "<group>"; };
+		AAD4E851265BFFD2001753E9 /* relic_md_hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_hmac.c; sourceTree = "<group>"; };
+		AAD4E852265BFFD2001753E9 /* relic_fb_poly.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_poly.c; sourceTree = "<group>"; };
+		AAD4E853265BFFD2001753E9 /* relic_ep_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_norm.c; sourceTree = "<group>"; };
+		AAD4E854265BFFD3001753E9 /* relic_fp9_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp9_mul.c; sourceTree = "<group>"; };
+		AAD4E855265BFFD3001753E9 /* relic_eb_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_mul.c; sourceTree = "<group>"; };
+		AAD4E856265BFFD3001753E9 /* relic_md_mgf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_mgf.c; sourceTree = "<group>"; };
+		AAD4E857265BFFD3001753E9 /* relic_ep2_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_pck.c; sourceTree = "<group>"; };
+		AAD4E858265BFFD3001753E9 /* relic_pp_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_norm.c; sourceTree = "<group>"; };
+		AAD4E859265BFFD3001753E9 /* relic_ed_norm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_norm.c; sourceTree = "<group>"; };
+		AAD4E85A265BFFD3001753E9 /* sha384-512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha384-512.c"; sourceTree = "<group>"; };
+		AAD4E85B265BFFD3001753E9 /* relic_ep_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_util.c; sourceTree = "<group>"; };
+		AAD4E85C265BFFD3001753E9 /* relic_fp18_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp18_mul.c; sourceTree = "<group>"; };
+		AAD4E85D265BFFD3001753E9 /* relic_ep2_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_cmp.c; sourceTree = "<group>"; };
+		AAD4E85E265BFFD3001753E9 /* relic_ep2_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_add.c; sourceTree = "<group>"; };
+		AAD4E85F265BFFD3001753E9 /* relic_fb_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_util.c; sourceTree = "<group>"; };
+		AAD4E860265BFFD3001753E9 /* relic_bn_div_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_div_low.c; sourceTree = "<group>"; };
+		AAD4E861265BFFD3001753E9 /* relic_ed_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_cmp.c; sourceTree = "<group>"; };
+		AAD4E862265BFFD3001753E9 /* relic_ed_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_add.c; sourceTree = "<group>"; };
+		AAD4E863265BFFD3001753E9 /* relic_pp_dbl_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k48.c; sourceTree = "<group>"; };
+		AAD4E864265BFFD3001753E9 /* relic_fp54_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp54_sqr.c; sourceTree = "<group>"; };
+		AAD4E865265BFFD3001753E9 /* relic_fb_slv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_slv.c; sourceTree = "<group>"; };
+		AAD4E866265BFFD3001753E9 /* relic_bn_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_add_low.c; sourceTree = "<group>"; };
+		AAD4E867265BFFD3001753E9 /* relic_fp_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_sqr_low.c; sourceTree = "<group>"; };
+		AAD4E868265BFFD3001753E9 /* relic_fp48_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp48_mul.c; sourceTree = "<group>"; };
+		AAD4E869265BFFD3001753E9 /* relic_ed_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_pck.c; sourceTree = "<group>"; };
+		AAD4E86A265BFFD3001753E9 /* relic_fp_shift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_shift.c; sourceTree = "<group>"; };
+		AAD4E86B265BFFD3001753E9 /* relic_ed_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_mul_fix.c; sourceTree = "<group>"; };
+		AAD4E86C265BFFD3001753E9 /* relic_fb_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_exp.c; sourceTree = "<group>"; };
+		AAD4E86D265BFFD3001753E9 /* relic_fp2_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp2_sqr.c; sourceTree = "<group>"; };
+		AAD4E86E265BFFD3001753E9 /* rijndael-api-fst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "rijndael-api-fst.c"; sourceTree = "<group>"; };
+		AAD4E86F265BFFD3001753E9 /* relic_fb_rdc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_rdc_low.c; sourceTree = "<group>"; };
+		AAD4E870265BFFD3001753E9 /* relic_fp_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_add.c; sourceTree = "<group>"; };
+		AAD4E871265BFFD3001753E9 /* relic_fp_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_cmp.c; sourceTree = "<group>"; };
+		AAD4E872265BFFD3001753E9 /* relic_cp_bgn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_bgn.c; sourceTree = "<group>"; };
+		AAD4E873265BFFD3001753E9 /* relic_bn_prime.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_prime.c; sourceTree = "<group>"; };
+		AAD4E874265BFFD3001753E9 /* relic_bn_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_cmp.c; sourceTree = "<group>"; };
+		AAD4E875265BFFD3001753E9 /* relic_fb_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_mul_low.c; sourceTree = "<group>"; };
+		AAD4E876265BFFD3001753E9 /* relic_bn_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_add.c; sourceTree = "<group>"; };
+		AAD4E877265BFFD3001753E9 /* relic_fp_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_param.c; sourceTree = "<group>"; };
+		AAD4E878265BFFD3001753E9 /* relic_ep2_frb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_frb.c; sourceTree = "<group>"; };
+		AAD4E879265BFFD3001753E9 /* relic_bn_factor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_factor.c; sourceTree = "<group>"; };
+		AAD4E87A265BFFD3001753E9 /* relic_bn_smb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_smb.c; sourceTree = "<group>"; };
+		AAD4E87B265BFFD3001753E9 /* relic_cp_rabin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_rabin.c; sourceTree = "<group>"; };
+		AAD4E87C265BFFD3001753E9 /* relic_fp12_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp12_mul.c; sourceTree = "<group>"; };
+		AAD4E87D265BFFD3001753E9 /* relic_md_xmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_xmd.c; sourceTree = "<group>"; };
+		AAD4E87E265BFFD3001753E9 /* relic_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_core.c; sourceTree = "<group>"; };
+		AAD4E87F265BFFD3001753E9 /* relic_bn_mod_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mod_low.c; sourceTree = "<group>"; };
+		AAD4E880265BFFD3001753E9 /* relic_eb_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_curve.c; sourceTree = "<group>"; };
+		AAD4E881265BFFD3001753E9 /* relic_fpx_rdc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_rdc.c; sourceTree = "<group>"; };
+		AAD4E882265BFFD3001753E9 /* relic_fb_itr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_itr_low.c; sourceTree = "<group>"; };
+		AAD4E883265BFFD3001753E9 /* relic_fb_inv_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_inv_low.c; sourceTree = "<group>"; };
+		AAD4E884265BFFD3001753E9 /* relic_cp_ibe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ibe.c; sourceTree = "<group>"; };
+		AAD4E885265BFFD3001753E9 /* relic_pp_dbl_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_dbl_k12.c; sourceTree = "<group>"; };
+		AAD4E886265BFFD3001753E9 /* relic_eb_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_cmp.c; sourceTree = "<group>"; };
+		AAD4E887265BFFD3001753E9 /* relic_eb_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_add.c; sourceTree = "<group>"; };
+		AAD4E888265BFFD3001753E9 /* relic_ep2_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_mul.c; sourceTree = "<group>"; };
+		AAD4E889265BFFD3001753E9 /* relic_fp3_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp3_mul.c; sourceTree = "<group>"; };
+		AAD4E88A265BFFD3001753E9 /* relic_fp6_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp6_sqr.c; sourceTree = "<group>"; };
+		AAD4E88B265BFFD3001753E9 /* relic_fb_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_inv.c; sourceTree = "<group>"; };
+		AAD4E88C265BFFD3001753E9 /* relic_eb_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_pck.c; sourceTree = "<group>"; };
+		AAD4E88D265BFFD3001753E9 /* relic_ep_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_neg.c; sourceTree = "<group>"; };
+		AAD4E88E265BFFD3001753E9 /* relic_fpx_cyc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_cyc.c; sourceTree = "<group>"; };
+		AAD4E88F265BFFD3001753E9 /* relic_fp_shift_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_shift_low.c; sourceTree = "<group>"; };
+		AAD4E890265BFFD3001753E9 /* relic_fb2_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_mul.c; sourceTree = "<group>"; };
+		AAD4E891265BFFD3001753E9 /* relic_md_sha224.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha224.c; sourceTree = "<group>"; };
+		AAD4E892265BFFD3001753E9 /* relic_bn_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_util.c; sourceTree = "<group>"; };
+		AAD4E893265BFFD3001753E9 /* relic_cp_ecdsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecdsa.c; sourceTree = "<group>"; };
+		AAD4E894265BFFD3001753E9 /* relic_md_blake2s.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_blake2s.c; sourceTree = "<group>"; };
+		AAD4E895265BFFD3001753E9 /* relic_eb_param.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_param.c; sourceTree = "<group>"; };
+		AAD4E896265BFFD3001753E9 /* relic_pc_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_util.c; sourceTree = "<group>"; };
+		AAD4E897265BFFD3001753E9 /* relic_fb_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_sqr.c; sourceTree = "<group>"; };
+		AAD4E898265BFFD3001753E9 /* relic_fp4_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp4_sqr.c; sourceTree = "<group>"; };
+		AAD4E899265BFFD3001753E9 /* relic_md_kdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_kdf.c; sourceTree = "<group>"; };
+		AAD4E89A265BFFD3001753E9 /* relic_eb_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_mul_fix.c; sourceTree = "<group>"; };
+		AAD4E89B265BFFD3001753E9 /* relic_ep_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_mul_sim.c; sourceTree = "<group>"; };
+		AAD4E89C265BFFD3001753E9 /* relic_fp_inv_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_inv_low.c; sourceTree = "<group>"; };
+		AAD4E89D265BFFD3001753E9 /* relic_fpx_add_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_add_low.c; sourceTree = "<group>"; };
+		AAD4E89E265BFFD3001753E9 /* relic_rand_hashd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_rand_hashd.c; sourceTree = "<group>"; };
+		AAD4E89F265BFFD3001753E9 /* relic_bn_rec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_rec.c; sourceTree = "<group>"; };
+		AAD4E8A0265BFFD3001753E9 /* relic_fb2_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_sqr.c; sourceTree = "<group>"; };
+		AAD4E8A1265BFFD3001753E9 /* relic_pp_add_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k12.c; sourceTree = "<group>"; };
+		AAD4E8A2265BFFD3001753E9 /* relic_fp3_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp3_sqr.c; sourceTree = "<group>"; };
+		AAD4E8A3265BFFD3001753E9 /* relic_fp6_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp6_mul.c; sourceTree = "<group>"; };
+		AAD4E8A4265BFFD3001753E9 /* relic_fpx_pck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_pck.c; sourceTree = "<group>"; };
+		AAD4E8A5265BFFD3001753E9 /* relic_fb_srt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_srt.c; sourceTree = "<group>"; };
+		AAD4E8A6265BFFD3001753E9 /* relic_fpx_add.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_add.c; sourceTree = "<group>"; };
+		AAD4E8A7265BFFD3001753E9 /* relic_fpx_cmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_cmp.c; sourceTree = "<group>"; };
+		AAD4E8A8265BFFD3001753E9 /* relic_fpx_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fpx_util.c; sourceTree = "<group>"; };
+		AAD4E8A9265BFFD3001753E9 /* relic_pp_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map.c; sourceTree = "<group>"; };
+		AAD4E8AA265BFFD3001753E9 /* relic_md_sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha256.c; sourceTree = "<group>"; };
+		AAD4E8AB265BFFD3001753E9 /* relic_fp12_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp12_sqr.c; sourceTree = "<group>"; };
+		AAD4E8AC265BFFD3001753E9 /* relic_bn_mxp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_mxp.c; sourceTree = "<group>"; };
+		AAD4E8AD265BFFD3001753E9 /* relic_eb_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_map.c; sourceTree = "<group>"; };
+		AAD4E8AE265BFFD3001753E9 /* relic_bn_shift_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_shift_low.c; sourceTree = "<group>"; };
+		AAD4E8AF265BFFD3001753E9 /* relic_cp_ecdh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecdh.c; sourceTree = "<group>"; };
+		AAD4E8B0265BFFD3001753E9 /* relic_cp_pss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_pss.c; sourceTree = "<group>"; };
+		AAD4E8B1265BFFD3001753E9 /* relic_eb_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_mul_sim.c; sourceTree = "<group>"; };
+		AAD4E8B2265BFFD3001753E9 /* relic_fb_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_mul.c; sourceTree = "<group>"; };
+		AAD4E8B3265BFFD3001753E9 /* relic_fp4_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp4_mul.c; sourceTree = "<group>"; };
+		AAD4E8B4265BFFD3001753E9 /* relic_eb_hlv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_hlv.c; sourceTree = "<group>"; };
+		AAD4E8B5265BFFD3001753E9 /* relic_bn_lcm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bn_lcm.c; sourceTree = "<group>"; };
+		AAD4E8B6265BFFD3001753E9 /* relic_cp_phpe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_phpe.c; sourceTree = "<group>"; };
+		AAD4E8B7265BFFD3001753E9 /* relic_pp_exp_k12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k12.c; sourceTree = "<group>"; };
+		AAD4E8B8265BFFD3001753E9 /* relic_cp_ecss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_ecss.c; sourceTree = "<group>"; };
+		AAD4E8B9265BFFD3001753E9 /* relic_ep_mul_fix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_mul_fix.c; sourceTree = "<group>"; };
+		AAD4E8BA265BFFD3001753E9 /* relic_eb_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_eb_dbl.c; sourceTree = "<group>"; };
+		AAD4E8BB265BFFD3001753E9 /* relic_fb2_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_inv.c; sourceTree = "<group>"; };
+		AAD4E8BC265BFFD3001753E9 /* relic_cp_rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_rsa.c; sourceTree = "<group>"; };
+		AAD4E8BD265BFFD3001753E9 /* relic_fp48_sqr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp48_sqr.c; sourceTree = "<group>"; };
+		AAD4E8BE265BFFD3001753E9 /* relic_ep2_neg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_neg.c; sourceTree = "<group>"; };
+		AAD4E8BF265BFFD3001753E9 /* relic_pp_add_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_add_k48.c; sourceTree = "<group>"; };
+		AAD4E8C0265BFFD3001753E9 /* relic_ep_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep_mul.c; sourceTree = "<group>"; };
+		AAD4E8C1265BFFD3001753E9 /* relic_rand_core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_rand_core.c; sourceTree = "<group>"; };
+		AAD4E8C2265BFFD3001753E9 /* relic_ed_map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_map.c; sourceTree = "<group>"; };
+		AAD4E8C3265BFFD3001753E9 /* relic_fp54_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp54_mul.c; sourceTree = "<group>"; };
+		AAD4E8C4265BFFD3001753E9 /* relic_md_sha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha512.c; sourceTree = "<group>"; };
+		AAD4E8C5265BFFD3001753E9 /* relic_fb_sqr_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb_sqr_low.c; sourceTree = "<group>"; };
+		AAD4E8C6265BFFD3001753E9 /* relic_pp_map_k54.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_map_k54.c; sourceTree = "<group>"; };
+		AAD4E8C7265BFFD3001753E9 /* relic_cp_mklhs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_mklhs.c; sourceTree = "<group>"; };
+		AAD4E8C8265BFFD3001753E9 /* relic_fb2_slv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fb2_slv.c; sourceTree = "<group>"; };
+		AAD4E8C9265BFFD3001753E9 /* relic_bc_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_bc_aes.c; sourceTree = "<group>"; };
+		AAD4E8CA265BFFD3001753E9 /* relic_fp_rdc_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_rdc_low.c; sourceTree = "<group>"; };
+		AAD4E8CB265BFFD3001753E9 /* relic_ed_mul_sim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_mul_sim.c; sourceTree = "<group>"; };
+		AAD4E8CC265BFFD3001753E9 /* relic_fp_rdc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_rdc.c; sourceTree = "<group>"; };
+		AAD4E8CD265BFFD3001753E9 /* relic_conf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_conf.c; sourceTree = "<group>"; };
+		AAD4E8CE265BFFD3001753E9 /* relic_ed_dbl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ed_dbl.c; sourceTree = "<group>"; };
+		AAD4E8CF265BFFD3001753E9 /* relic_arch_x64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_arch_x64.c; sourceTree = "<group>"; };
+		AAD4E8D0265BFFD3001753E9 /* relic_ep2_curve.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_ep2_curve.c; sourceTree = "<group>"; };
+		AAD4E8D1265BFFD3001753E9 /* relic_pc_exp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pc_exp.c; sourceTree = "<group>"; };
+		AAD4E8D2265BFFD3001753E9 /* relic_md_sha384.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_md_sha384.c; sourceTree = "<group>"; };
+		AAD4E8D3265BFFD3001753E9 /* relic_pp_exp_k48.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_pp_exp_k48.c; sourceTree = "<group>"; };
+		AAD4E8D4265BFFD3001753E9 /* relic_cp_sokaka.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_cp_sokaka.c; sourceTree = "<group>"; };
+		AAD4E8D5265BFFD3001753E9 /* relic_fp_mul_low.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp_mul_low.c; sourceTree = "<group>"; };
+		AAD4E8D6265BFFD3001753E9 /* relic_fp2_mul.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = relic_fp2_mul.c; sourceTree = "<group>"; };
+		AAD4E8D8265BFFD3001753E9 /* relic_epx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_epx.h; sourceTree = "<group>"; };
+		AAD4E8D9265BFFD3001753E9 /* relic_ed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_ed.h; sourceTree = "<group>"; };
+		AAD4E8DA265BFFD3001753E9 /* relic_pp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_pp.h; sourceTree = "<group>"; };
+		AAD4E8DB265BFFD3001753E9 /* rijndael-api-fst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rijndael-api-fst.h"; sourceTree = "<group>"; };
+		AAD4E8DC265BFFD3001753E9 /* relic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_types.h; sourceTree = "<group>"; };
+		AAD4E8DD265BFFD3001753E9 /* relic_fpx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fpx.h; sourceTree = "<group>"; };
+		AAD4E8DE265BFFD3001753E9 /* relic_dv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_dv.h; sourceTree = "<group>"; };
+		AAD4E8DF265BFFD3001753E9 /* relic_label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_label.h; sourceTree = "<group>"; };
+		AAD4E8E1265BFFD3001753E9 /* relic_fpx_low.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fpx_low.h; sourceTree = "<group>"; };
+		AAD4E8E2265BFFD3001753E9 /* relic_bn_low.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_bn_low.h; sourceTree = "<group>"; };
+		AAD4E8E3265BFFD3001753E9 /* relic_fp_low.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fp_low.h; sourceTree = "<group>"; };
+		AAD4E8E4265BFFD3001753E9 /* relic_dv_low.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_dv_low.h; sourceTree = "<group>"; };
+		AAD4E8E5265BFFD3001753E9 /* relic_fb_low.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fb_low.h; sourceTree = "<group>"; };
+		AAD4E8E6265BFFD3001753E9 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		AAD4E8E7265BFFD3001753E9 /* relic_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_core.h; sourceTree = "<group>"; };
+		AAD4E8E8265BFFD3001753E9 /* sha_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha_private.h; sourceTree = "<group>"; };
+		AAD4E8E9265BFFD3001753E9 /* relic_ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_ec.h; sourceTree = "<group>"; };
+		AAD4E8EA265BFFD3001753E9 /* relic_fbx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fbx.h; sourceTree = "<group>"; };
+		AAD4E8EB265BFFD3001753E9 /* relic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic.h; sourceTree = "<group>"; };
+		AAD4E8EC265BFFD3001753E9 /* relic_fp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fp.h; sourceTree = "<group>"; };
+		AAD4E8ED265BFFD3001753E9 /* gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmp.h; sourceTree = "<group>"; };
+		AAD4E8EE265BFFD3001753E9 /* relic_conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_conf.h; sourceTree = "<group>"; };
+		AAD4E8EF265BFFD3001753E9 /* relic_tmpl_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_tmpl_map.h; sourceTree = "<group>"; };
+		AAD4E8F0265BFFD3001753E9 /* relic_fb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_fb.h; sourceTree = "<group>"; };
+		AAD4E8F1265BFFD3001753E9 /* relic_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_test.h; sourceTree = "<group>"; };
+		AAD4E8F2265BFFD3001753E9 /* relic_cp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_cp.h; sourceTree = "<group>"; };
+		AAD4E8F3265BFFD3001753E9 /* relic_bench.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_bench.h; sourceTree = "<group>"; };
+		AAD4E8F4265BFFD3001753E9 /* rijndael-alg-fst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rijndael-alg-fst.h"; sourceTree = "<group>"; };
+		AAD4E8F5265BFFD3001753E9 /* relic_eb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_eb.h; sourceTree = "<group>"; };
+		AAD4E8F6265BFFD3001753E9 /* relic_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_util.h; sourceTree = "<group>"; };
+		AAD4E8F7265BFFD3001753E9 /* relic_md.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_md.h; sourceTree = "<group>"; };
+		AAD4E8F8265BFFD3001753E9 /* relic_rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_rand.h; sourceTree = "<group>"; };
+		AAD4E8F9265BFFD3001753E9 /* blake2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blake2.h; sourceTree = "<group>"; };
+		AAD4E8FA265BFFD3001753E9 /* relic_bc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_bc.h; sourceTree = "<group>"; };
+		AAD4E8FB265BFFD3001753E9 /* relic_mpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_mpc.h; sourceTree = "<group>"; };
+		AAD4E8FC265BFFD3001753E9 /* relic_conf.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = relic_conf.h.in; sourceTree = "<group>"; };
+		AAD4E8FD265BFFD3001753E9 /* relic_ep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_ep.h; sourceTree = "<group>"; };
+		AAD4E8FE265BFFD3001753E9 /* relic_multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_multi.h; sourceTree = "<group>"; };
+		AAD4E8FF265BFFD3001753E9 /* relic_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_err.h; sourceTree = "<group>"; };
+		AAD4E900265BFFD3001753E9 /* relic_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_alloc.h; sourceTree = "<group>"; };
+		AAD4E901265BFFD3001753E9 /* relic_arch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_arch.h; sourceTree = "<group>"; };
+		AAD4E902265BFFD3001753E9 /* blake2-impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blake2-impl.h"; sourceTree = "<group>"; };
+		AAD4E903265BFFD3001753E9 /* relic_pc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_pc.h; sourceTree = "<group>"; };
+		AAD4E904265BFFD3001753E9 /* relic_bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relic_bn.h; sourceTree = "<group>"; };
+		AAD4E9F4265C0004001753E9 /* bls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bls.cpp; sourceTree = "<group>"; };
+		AAD4E9F5265C0004001753E9 /* elements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = elements.cpp; sourceTree = "<group>"; };
+		AAD4E9F6265C0004001753E9 /* privatekey.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = privatekey.cpp; sourceTree = "<group>"; };
+		AAD4E9F7265C0004001753E9 /* schemes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = schemes.cpp; sourceTree = "<group>"; };
+		AAD4E9F9265C0004001753E9 /* hdkeys.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hdkeys.hpp; sourceTree = "<group>"; };
+		AAD4E9FA265C0004001753E9 /* schemes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = schemes.hpp; sourceTree = "<group>"; };
+		AAD4E9FB265C0004001753E9 /* test-utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "test-utils.hpp"; sourceTree = "<group>"; };
+		AAD4E9FC265C0004001753E9 /* util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = util.hpp; sourceTree = "<group>"; };
+		AAD4E9FD265C0004001753E9 /* bls.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bls.hpp; sourceTree = "<group>"; };
+		AAD4E9FE265C0004001753E9 /* elements.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = elements.hpp; sourceTree = "<group>"; };
+		AAD4E9FF265C0004001753E9 /* hkdf.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = hkdf.hpp; sourceTree = "<group>"; };
+		AAD4EA00265C0004001753E9 /* privatekey.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = privatekey.hpp; sourceTree = "<group>"; };
 		B9709DE7610128F053C21C70 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		C2558A2D301A3BDC76C1038B /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -54,7 +629,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD4EA0A265C0038001753E9 /* libbls.a in Frameworks */,
+				AAD4EA09265C0035001753E9 /* librelic_s.a in Frameworks */,
 				6C836AD7580DB72CF7258106 /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E7D1265BFFA8001753E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E7DD265BFFB4001753E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +676,8 @@
 			children = (
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
+				AAD4E7D5265BFFA8001753E9 /* bls */,
+				AAD4E7E1265BFFB4001753E9 /* relic_s */,
 				97C146EF1CF9000F007C117D /* Products */,
 				CB75091D36F218F523F88BA0 /* Pods */,
 				9173E8D65658ABC1FF252F00 /* Frameworks */,
@@ -95,6 +688,8 @@
 			isa = PBXGroup;
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
+				AAD4E7D4265BFFA8001753E9 /* libbls.a */,
+				AAD4E7E0265BFFB4001753E9 /* librelic_s.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +709,354 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
+		AAD4E7D5265BFFA8001753E9 /* bls */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E9F8265C0004001753E9 /* Headers */,
+				AAD4E9F3265C0004001753E9 /* Source */,
+			);
+			path = bls;
+			sourceTree = "<group>";
+		};
+		AAD4E7E1265BFFB4001753E9 /* relic_s */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E8D7265BFFD3001753E9 /* Headers */,
+				AAD4E7E8265BFFD2001753E9 /* Sources */,
+			);
+			path = relic_s;
+			sourceTree = "<group>";
+		};
+		AAD4E7E8265BFFD2001753E9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E7E9265BFFD2001753E9 /* relic_ep2_dbl.c */,
+				AAD4E7EA265BFFD2001753E9 /* relic_fp_exp.c */,
+				AAD4E7EB265BFFD2001753E9 /* relic_dv_mem.c */,
+				AAD4E7EC265BFFD2001753E9 /* relic_fpx_srt.c */,
+				AAD4E7ED265BFFD2001753E9 /* relic_fb_param.c */,
+				AAD4E7EE265BFFD2001753E9 /* relic_fb_trc_low.c */,
+				AAD4E7EF265BFFD2001753E9 /* relic_cp_zss.c */,
+				AAD4E7F0265BFFD2001753E9 /* relic_pp_add_k8.c */,
+				AAD4E7F1265BFFD2001753E9 /* relic_fb_add.c */,
+				AAD4E7F2265BFFD2001753E9 /* relic_fb_cmp.c */,
+				AAD4E7F3265BFFD2001753E9 /* relic_pp_add_k2.c */,
+				AAD4E7F4265BFFD2001753E9 /* relic_ep2_mul_sim.c */,
+				AAD4E7F5265BFFD2001753E9 /* relic_ed_curve.c */,
+				AAD4E7F6265BFFD2001753E9 /* relic_util.c */,
+				AAD4E7F7265BFFD2001753E9 /* relic_dv_util.c */,
+				AAD4E7F8265BFFD2001753E9 /* relic_ep2_map.c */,
+				AAD4E7F9265BFFD2001753E9 /* rijndael-alg-fst.c */,
+				AAD4E7FA265BFFD2001753E9 /* blake2s-ref.c */,
+				AAD4E7FB265BFFD2001753E9 /* relic_cp_cls.c */,
+				AAD4E7FC265BFFD2001753E9 /* relic_fp18_sqr.c */,
+				AAD4E7FD265BFFD2001753E9 /* relic_fb_shift.c */,
+				AAD4E7FE265BFFD2001753E9 /* relic_fpx_mul_low.c */,
+				AAD4E7FF265BFFD2001753E9 /* relic_bn_mem.c */,
+				AAD4E800265BFFD2001753E9 /* relic_cp_ghpe.c */,
+				AAD4E801265BFFD2001753E9 /* relic_ed_neg.c */,
+				AAD4E802265BFFD2001753E9 /* relic_cp_bls.c */,
+				AAD4E803265BFFD2001753E9 /* relic_pc_core.c */,
+				AAD4E804265BFFD2001753E9 /* relic_fb_trc.c */,
+				AAD4E805265BFFD2001753E9 /* relic_ed_param.c */,
+				AAD4E806265BFFD2001753E9 /* relic_fpx_rdc_low.c */,
+				AAD4E807265BFFD2001753E9 /* relic_fp9_sqr.c */,
+				AAD4E808265BFFD2001753E9 /* relic_bn_mod.c */,
+				AAD4E809265BFFD2001753E9 /* relic_pp_exp_k2.c */,
+				AAD4E80A265BFFD2001753E9 /* relic_eb_norm.c */,
+				AAD4E80B265BFFD2001753E9 /* relic_ep2_mul_cof.c */,
+				AAD4E80C265BFFD2001753E9 /* relic_pp_exp_k8.c */,
+				AAD4E80D265BFFD2001753E9 /* relic_bn_sqr.c */,
+				AAD4E80E265BFFD2001753E9 /* relic_fp8_mul.c */,
+				AAD4E80F265BFFD2001753E9 /* relic_fp_sqr.c */,
+				AAD4E810265BFFD2001753E9 /* relic_pp_dbl_k54.c */,
+				AAD4E811265BFFD2001753E9 /* relic_bn_shift.c */,
+				AAD4E812265BFFD2001753E9 /* relic_fp_add_low.c */,
+				AAD4E813265BFFD2001753E9 /* relic_bn_sqr_low.c */,
+				AAD4E814265BFFD2001753E9 /* relic_eb_util.c */,
+				AAD4E815265BFFD2001753E9 /* relic_fp24_mul.c */,
+				AAD4E816265BFFD2001753E9 /* relic_ep_param.c */,
+				AAD4E817265BFFD2001753E9 /* relic_fp_util.c */,
+				AAD4E818265BFFD2001753E9 /* relic_fb_slv_low.c */,
+				AAD4E819265BFFD2001753E9 /* relic_ep_psi.c */,
+				AAD4E81A265BFFD2001753E9 /* relic_fpx_frb.c */,
+				AAD4E81B265BFFD2001753E9 /* relic_ep_cmp.c */,
+				AAD4E81C265BFFD2001753E9 /* relic_bn_div.c */,
+				AAD4E81D265BFFD2001753E9 /* relic_ep_add.c */,
+				AAD4E81E265BFFD2001753E9 /* sha224-256.c */,
+				AAD4E81F265BFFD2001753E9 /* relic_bn_inv.c */,
+				AAD4E820265BFFD2001753E9 /* relic_fb_shift_low.c */,
+				AAD4E821265BFFD2001753E9 /* relic_ep_pck.c */,
+				AAD4E822265BFFD2001753E9 /* relic_ep_curve.c */,
+				AAD4E823265BFFD2001753E9 /* relic_fp_inv.c */,
+				AAD4E824265BFFD2001753E9 /* relic_fp_prime.c */,
+				AAD4E825265BFFD2001753E9 /* relic_eb_neg.c */,
+				AAD4E826265BFFD2001753E9 /* relic_cp_ecies.c */,
+				AAD4E827265BFFD2001753E9 /* relic_eb_frb.c */,
+				AAD4E828265BFFD2001753E9 /* relic_cp_cmlhs.c */,
+				AAD4E829265BFFD2001753E9 /* relic_pp_add_k54.c */,
+				AAD4E82A265BFFD2001753E9 /* relic_fp24_sqr.c */,
+				AAD4E82B265BFFD2001753E9 /* lzcnt.inc */,
+				AAD4E82C265BFFD2001753E9 /* relic_bn_mul.c */,
+				AAD4E82D265BFFD2001753E9 /* relic_fp8_sqr.c */,
+				AAD4E82E265BFFD2001753E9 /* relic_bn_gcd.c */,
+				AAD4E82F265BFFD2001753E9 /* relic_cp_bdpe.c */,
+				AAD4E830265BFFD2001753E9 /* relic_mt_mpc.c */,
+				AAD4E831265BFFD2001753E9 /* relic_pp_map_k48.c */,
+				AAD4E832265BFFD2001753E9 /* relic_fp_mul.c */,
+				AAD4E833265BFFD2001753E9 /* relic_fpx_field.c */,
+				AAD4E834265BFFD2001753E9 /* relic_fb_add_low.c */,
+				AAD4E835265BFFD2001753E9 /* relic_ep_dbl.c */,
+				AAD4E836265BFFD2001753E9 /* relic_err.c */,
+				AAD4E837265BFFD2001753E9 /* relic_cp_bbs.c */,
+				AAD4E838265BFFD2001753E9 /* relic_pc_mpc.c */,
+				AAD4E839265BFFD2001753E9 /* relic_cp_ecmqv.c */,
+				AAD4E83A265BFFD2001753E9 /* relic_pp_map_k8.c */,
+				AAD4E83B265BFFD2001753E9 /* relic_ed_mul.c */,
+				AAD4E83C265BFFD2001753E9 /* relic_pp_dbl_k2.c */,
+				AAD4E83D265BFFD2001753E9 /* relic_fpx_exp.c */,
+				AAD4E83E265BFFD2001753E9 /* relic_fp_srt.c */,
+				AAD4E83F265BFFD2001753E9 /* relic_pp_map_k2.c */,
+				AAD4E840265BFFD2001753E9 /* relic_cp_vbnn.c */,
+				AAD4E841265BFFD2001753E9 /* relic_pp_dbl_k8.c */,
+				AAD4E842265BFFD2001753E9 /* relic_bn_srt.c */,
+				AAD4E843265BFFD2001753E9 /* relic_ep_map.c */,
+				AAD4E844265BFFD2001753E9 /* relic_pp_exp_k54.c */,
+				AAD4E845265BFFD2001753E9 /* relic_bn_mul_low.c */,
+				AAD4E846265BFFD2001753E9 /* relic_fpx_sqr_low.c */,
+				AAD4E847265BFFD2001753E9 /* relic_fb_rdc.c */,
+				AAD4E848265BFFD2001753E9 /* relic_fb_srt_low.c */,
+				AAD4E849265BFFD2001753E9 /* relic_ep2_norm.c */,
+				AAD4E84A265BFFD2001753E9 /* relic_fb_itr.c */,
+				AAD4E84B265BFFD2001753E9 /* relic_fpx_inv.c */,
+				AAD4E84C265BFFD2001753E9 /* relic_pp_map_k12.c */,
+				AAD4E84D265BFFD2001753E9 /* relic_cp_mpss.c */,
+				AAD4E84E265BFFD2001753E9 /* relic_ep2_util.c */,
+				AAD4E84F265BFFD2001753E9 /* relic_ep2_mul_fix.c */,
+				AAD4E850265BFFD2001753E9 /* relic_ed_util.c */,
+				AAD4E851265BFFD2001753E9 /* relic_md_hmac.c */,
+				AAD4E852265BFFD2001753E9 /* relic_fb_poly.c */,
+				AAD4E853265BFFD2001753E9 /* relic_ep_norm.c */,
+				AAD4E854265BFFD3001753E9 /* relic_fp9_mul.c */,
+				AAD4E855265BFFD3001753E9 /* relic_eb_mul.c */,
+				AAD4E856265BFFD3001753E9 /* relic_md_mgf.c */,
+				AAD4E857265BFFD3001753E9 /* relic_ep2_pck.c */,
+				AAD4E858265BFFD3001753E9 /* relic_pp_norm.c */,
+				AAD4E859265BFFD3001753E9 /* relic_ed_norm.c */,
+				AAD4E85A265BFFD3001753E9 /* sha384-512.c */,
+				AAD4E85B265BFFD3001753E9 /* relic_ep_util.c */,
+				AAD4E85C265BFFD3001753E9 /* relic_fp18_mul.c */,
+				AAD4E85D265BFFD3001753E9 /* relic_ep2_cmp.c */,
+				AAD4E85E265BFFD3001753E9 /* relic_ep2_add.c */,
+				AAD4E85F265BFFD3001753E9 /* relic_fb_util.c */,
+				AAD4E860265BFFD3001753E9 /* relic_bn_div_low.c */,
+				AAD4E861265BFFD3001753E9 /* relic_ed_cmp.c */,
+				AAD4E862265BFFD3001753E9 /* relic_ed_add.c */,
+				AAD4E863265BFFD3001753E9 /* relic_pp_dbl_k48.c */,
+				AAD4E864265BFFD3001753E9 /* relic_fp54_sqr.c */,
+				AAD4E865265BFFD3001753E9 /* relic_fb_slv.c */,
+				AAD4E866265BFFD3001753E9 /* relic_bn_add_low.c */,
+				AAD4E867265BFFD3001753E9 /* relic_fp_sqr_low.c */,
+				AAD4E868265BFFD3001753E9 /* relic_fp48_mul.c */,
+				AAD4E869265BFFD3001753E9 /* relic_ed_pck.c */,
+				AAD4E86A265BFFD3001753E9 /* relic_fp_shift.c */,
+				AAD4E86B265BFFD3001753E9 /* relic_ed_mul_fix.c */,
+				AAD4E86C265BFFD3001753E9 /* relic_fb_exp.c */,
+				AAD4E86D265BFFD3001753E9 /* relic_fp2_sqr.c */,
+				AAD4E86E265BFFD3001753E9 /* rijndael-api-fst.c */,
+				AAD4E86F265BFFD3001753E9 /* relic_fb_rdc_low.c */,
+				AAD4E870265BFFD3001753E9 /* relic_fp_add.c */,
+				AAD4E871265BFFD3001753E9 /* relic_fp_cmp.c */,
+				AAD4E872265BFFD3001753E9 /* relic_cp_bgn.c */,
+				AAD4E873265BFFD3001753E9 /* relic_bn_prime.c */,
+				AAD4E874265BFFD3001753E9 /* relic_bn_cmp.c */,
+				AAD4E875265BFFD3001753E9 /* relic_fb_mul_low.c */,
+				AAD4E876265BFFD3001753E9 /* relic_bn_add.c */,
+				AAD4E877265BFFD3001753E9 /* relic_fp_param.c */,
+				AAD4E878265BFFD3001753E9 /* relic_ep2_frb.c */,
+				AAD4E879265BFFD3001753E9 /* relic_bn_factor.c */,
+				AAD4E87A265BFFD3001753E9 /* relic_bn_smb.c */,
+				AAD4E87B265BFFD3001753E9 /* relic_cp_rabin.c */,
+				AAD4E87C265BFFD3001753E9 /* relic_fp12_mul.c */,
+				AAD4E87D265BFFD3001753E9 /* relic_md_xmd.c */,
+				AAD4E87E265BFFD3001753E9 /* relic_core.c */,
+				AAD4E87F265BFFD3001753E9 /* relic_bn_mod_low.c */,
+				AAD4E880265BFFD3001753E9 /* relic_eb_curve.c */,
+				AAD4E881265BFFD3001753E9 /* relic_fpx_rdc.c */,
+				AAD4E882265BFFD3001753E9 /* relic_fb_itr_low.c */,
+				AAD4E883265BFFD3001753E9 /* relic_fb_inv_low.c */,
+				AAD4E884265BFFD3001753E9 /* relic_cp_ibe.c */,
+				AAD4E885265BFFD3001753E9 /* relic_pp_dbl_k12.c */,
+				AAD4E886265BFFD3001753E9 /* relic_eb_cmp.c */,
+				AAD4E887265BFFD3001753E9 /* relic_eb_add.c */,
+				AAD4E888265BFFD3001753E9 /* relic_ep2_mul.c */,
+				AAD4E889265BFFD3001753E9 /* relic_fp3_mul.c */,
+				AAD4E88A265BFFD3001753E9 /* relic_fp6_sqr.c */,
+				AAD4E88B265BFFD3001753E9 /* relic_fb_inv.c */,
+				AAD4E88C265BFFD3001753E9 /* relic_eb_pck.c */,
+				AAD4E88D265BFFD3001753E9 /* relic_ep_neg.c */,
+				AAD4E88E265BFFD3001753E9 /* relic_fpx_cyc.c */,
+				AAD4E88F265BFFD3001753E9 /* relic_fp_shift_low.c */,
+				AAD4E890265BFFD3001753E9 /* relic_fb2_mul.c */,
+				AAD4E891265BFFD3001753E9 /* relic_md_sha224.c */,
+				AAD4E892265BFFD3001753E9 /* relic_bn_util.c */,
+				AAD4E893265BFFD3001753E9 /* relic_cp_ecdsa.c */,
+				AAD4E894265BFFD3001753E9 /* relic_md_blake2s.c */,
+				AAD4E895265BFFD3001753E9 /* relic_eb_param.c */,
+				AAD4E896265BFFD3001753E9 /* relic_pc_util.c */,
+				AAD4E897265BFFD3001753E9 /* relic_fb_sqr.c */,
+				AAD4E898265BFFD3001753E9 /* relic_fp4_sqr.c */,
+				AAD4E899265BFFD3001753E9 /* relic_md_kdf.c */,
+				AAD4E89A265BFFD3001753E9 /* relic_eb_mul_fix.c */,
+				AAD4E89B265BFFD3001753E9 /* relic_ep_mul_sim.c */,
+				AAD4E89C265BFFD3001753E9 /* relic_fp_inv_low.c */,
+				AAD4E89D265BFFD3001753E9 /* relic_fpx_add_low.c */,
+				AAD4E89E265BFFD3001753E9 /* relic_rand_hashd.c */,
+				AAD4E89F265BFFD3001753E9 /* relic_bn_rec.c */,
+				AAD4E8A0265BFFD3001753E9 /* relic_fb2_sqr.c */,
+				AAD4E8A1265BFFD3001753E9 /* relic_pp_add_k12.c */,
+				AAD4E8A2265BFFD3001753E9 /* relic_fp3_sqr.c */,
+				AAD4E8A3265BFFD3001753E9 /* relic_fp6_mul.c */,
+				AAD4E8A4265BFFD3001753E9 /* relic_fpx_pck.c */,
+				AAD4E8A5265BFFD3001753E9 /* relic_fb_srt.c */,
+				AAD4E8A6265BFFD3001753E9 /* relic_fpx_add.c */,
+				AAD4E8A7265BFFD3001753E9 /* relic_fpx_cmp.c */,
+				AAD4E8A8265BFFD3001753E9 /* relic_fpx_util.c */,
+				AAD4E8A9265BFFD3001753E9 /* relic_pp_map.c */,
+				AAD4E8AA265BFFD3001753E9 /* relic_md_sha256.c */,
+				AAD4E8AB265BFFD3001753E9 /* relic_fp12_sqr.c */,
+				AAD4E8AC265BFFD3001753E9 /* relic_bn_mxp.c */,
+				AAD4E8AD265BFFD3001753E9 /* relic_eb_map.c */,
+				AAD4E8AE265BFFD3001753E9 /* relic_bn_shift_low.c */,
+				AAD4E8AF265BFFD3001753E9 /* relic_cp_ecdh.c */,
+				AAD4E8B0265BFFD3001753E9 /* relic_cp_pss.c */,
+				AAD4E8B1265BFFD3001753E9 /* relic_eb_mul_sim.c */,
+				AAD4E8B2265BFFD3001753E9 /* relic_fb_mul.c */,
+				AAD4E8B3265BFFD3001753E9 /* relic_fp4_mul.c */,
+				AAD4E8B4265BFFD3001753E9 /* relic_eb_hlv.c */,
+				AAD4E8B5265BFFD3001753E9 /* relic_bn_lcm.c */,
+				AAD4E8B6265BFFD3001753E9 /* relic_cp_phpe.c */,
+				AAD4E8B7265BFFD3001753E9 /* relic_pp_exp_k12.c */,
+				AAD4E8B8265BFFD3001753E9 /* relic_cp_ecss.c */,
+				AAD4E8B9265BFFD3001753E9 /* relic_ep_mul_fix.c */,
+				AAD4E8BA265BFFD3001753E9 /* relic_eb_dbl.c */,
+				AAD4E8BB265BFFD3001753E9 /* relic_fb2_inv.c */,
+				AAD4E8BC265BFFD3001753E9 /* relic_cp_rsa.c */,
+				AAD4E8BD265BFFD3001753E9 /* relic_fp48_sqr.c */,
+				AAD4E8BE265BFFD3001753E9 /* relic_ep2_neg.c */,
+				AAD4E8BF265BFFD3001753E9 /* relic_pp_add_k48.c */,
+				AAD4E8C0265BFFD3001753E9 /* relic_ep_mul.c */,
+				AAD4E8C1265BFFD3001753E9 /* relic_rand_core.c */,
+				AAD4E8C2265BFFD3001753E9 /* relic_ed_map.c */,
+				AAD4E8C3265BFFD3001753E9 /* relic_fp54_mul.c */,
+				AAD4E8C4265BFFD3001753E9 /* relic_md_sha512.c */,
+				AAD4E8C5265BFFD3001753E9 /* relic_fb_sqr_low.c */,
+				AAD4E8C6265BFFD3001753E9 /* relic_pp_map_k54.c */,
+				AAD4E8C7265BFFD3001753E9 /* relic_cp_mklhs.c */,
+				AAD4E8C8265BFFD3001753E9 /* relic_fb2_slv.c */,
+				AAD4E8C9265BFFD3001753E9 /* relic_bc_aes.c */,
+				AAD4E8CA265BFFD3001753E9 /* relic_fp_rdc_low.c */,
+				AAD4E8CB265BFFD3001753E9 /* relic_ed_mul_sim.c */,
+				AAD4E8CC265BFFD3001753E9 /* relic_fp_rdc.c */,
+				AAD4E8CD265BFFD3001753E9 /* relic_conf.c */,
+				AAD4E8CE265BFFD3001753E9 /* relic_ed_dbl.c */,
+				AAD4E8CF265BFFD3001753E9 /* relic_arch_x64.c */,
+				AAD4E8D0265BFFD3001753E9 /* relic_ep2_curve.c */,
+				AAD4E8D1265BFFD3001753E9 /* relic_pc_exp.c */,
+				AAD4E8D2265BFFD3001753E9 /* relic_md_sha384.c */,
+				AAD4E8D3265BFFD3001753E9 /* relic_pp_exp_k48.c */,
+				AAD4E8D4265BFFD3001753E9 /* relic_cp_sokaka.c */,
+				AAD4E8D5265BFFD3001753E9 /* relic_fp_mul_low.c */,
+				AAD4E8D6265BFFD3001753E9 /* relic_fp2_mul.c */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AAD4E8D7265BFFD3001753E9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E8D8265BFFD3001753E9 /* relic_epx.h */,
+				AAD4E8D9265BFFD3001753E9 /* relic_ed.h */,
+				AAD4E8DA265BFFD3001753E9 /* relic_pp.h */,
+				AAD4E8DB265BFFD3001753E9 /* rijndael-api-fst.h */,
+				AAD4E8DC265BFFD3001753E9 /* relic_types.h */,
+				AAD4E8DD265BFFD3001753E9 /* relic_fpx.h */,
+				AAD4E8DE265BFFD3001753E9 /* relic_dv.h */,
+				AAD4E8DF265BFFD3001753E9 /* relic_label.h */,
+				AAD4E8E0265BFFD3001753E9 /* low */,
+				AAD4E8E6265BFFD3001753E9 /* sha.h */,
+				AAD4E8E7265BFFD3001753E9 /* relic_core.h */,
+				AAD4E8E8265BFFD3001753E9 /* sha_private.h */,
+				AAD4E8E9265BFFD3001753E9 /* relic_ec.h */,
+				AAD4E8EA265BFFD3001753E9 /* relic_fbx.h */,
+				AAD4E8EB265BFFD3001753E9 /* relic.h */,
+				AAD4E8EC265BFFD3001753E9 /* relic_fp.h */,
+				AAD4E8ED265BFFD3001753E9 /* gmp.h */,
+				AAD4E8EE265BFFD3001753E9 /* relic_conf.h */,
+				AAD4E8EF265BFFD3001753E9 /* relic_tmpl_map.h */,
+				AAD4E8F0265BFFD3001753E9 /* relic_fb.h */,
+				AAD4E8F1265BFFD3001753E9 /* relic_test.h */,
+				AAD4E8F2265BFFD3001753E9 /* relic_cp.h */,
+				AAD4E8F3265BFFD3001753E9 /* relic_bench.h */,
+				AAD4E8F4265BFFD3001753E9 /* rijndael-alg-fst.h */,
+				AAD4E8F5265BFFD3001753E9 /* relic_eb.h */,
+				AAD4E8F6265BFFD3001753E9 /* relic_util.h */,
+				AAD4E8F7265BFFD3001753E9 /* relic_md.h */,
+				AAD4E8F8265BFFD3001753E9 /* relic_rand.h */,
+				AAD4E8F9265BFFD3001753E9 /* blake2.h */,
+				AAD4E8FA265BFFD3001753E9 /* relic_bc.h */,
+				AAD4E8FB265BFFD3001753E9 /* relic_mpc.h */,
+				AAD4E8FC265BFFD3001753E9 /* relic_conf.h.in */,
+				AAD4E8FD265BFFD3001753E9 /* relic_ep.h */,
+				AAD4E8FE265BFFD3001753E9 /* relic_multi.h */,
+				AAD4E8FF265BFFD3001753E9 /* relic_err.h */,
+				AAD4E900265BFFD3001753E9 /* relic_alloc.h */,
+				AAD4E901265BFFD3001753E9 /* relic_arch.h */,
+				AAD4E902265BFFD3001753E9 /* blake2-impl.h */,
+				AAD4E903265BFFD3001753E9 /* relic_pc.h */,
+				AAD4E904265BFFD3001753E9 /* relic_bn.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		AAD4E8E0265BFFD3001753E9 /* low */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E8E1265BFFD3001753E9 /* relic_fpx_low.h */,
+				AAD4E8E2265BFFD3001753E9 /* relic_bn_low.h */,
+				AAD4E8E3265BFFD3001753E9 /* relic_fp_low.h */,
+				AAD4E8E4265BFFD3001753E9 /* relic_dv_low.h */,
+				AAD4E8E5265BFFD3001753E9 /* relic_fb_low.h */,
+			);
+			path = low;
+			sourceTree = "<group>";
+		};
+		AAD4E9F3265C0004001753E9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E9F4265C0004001753E9 /* bls.cpp */,
+				AAD4E9F5265C0004001753E9 /* elements.cpp */,
+				AAD4E9F6265C0004001753E9 /* privatekey.cpp */,
+				AAD4E9F7265C0004001753E9 /* schemes.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AAD4E9F8265C0004001753E9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E9F9265C0004001753E9 /* hdkeys.hpp */,
+				AAD4E9FA265C0004001753E9 /* schemes.hpp */,
+				AAD4E9FB265C0004001753E9 /* test-utils.hpp */,
+				AAD4E9FC265C0004001753E9 /* util.hpp */,
+				AAD4E9FD265C0004001753E9 /* bls.hpp */,
+				AAD4E9FE265C0004001753E9 /* elements.hpp */,
+				AAD4E9FF265C0004001753E9 /* hkdf.hpp */,
+				AAD4EA00265C0004001753E9 /* privatekey.hpp */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		CB75091D36F218F523F88BA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +1064,6 @@
 				A1D4E2A6827A39C7393186DE /* Pods-Runner.release.xcconfig */,
 				4F746A98F5773A581FF6C3FF /* Pods-Runner.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,11 +1086,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				AAD4EA08265C0030001753E9 /* PBXTargetDependency */,
+				AAD4EA06265C002E001753E9 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
 			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AAD4E7D3265BFFA8001753E9 /* bls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD4E7DB265BFFA8001753E9 /* Build configuration list for PBXNativeTarget "bls" */;
+			buildPhases = (
+				AAD4E7D0265BFFA8001753E9 /* Sources */,
+				AAD4E7D1265BFFA8001753E9 /* Frameworks */,
+				AAD4E7D2265BFFA8001753E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bls;
+			productName = bls;
+			productReference = AAD4E7D4265BFFA8001753E9 /* libbls.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AAD4E7DF265BFFB4001753E9 /* relic_s */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD4E7E4265BFFB4001753E9 /* Build configuration list for PBXNativeTarget "relic_s" */;
+			buildPhases = (
+				AAD4E7DC265BFFB4001753E9 /* Sources */,
+				AAD4E7DD265BFFB4001753E9 /* Frameworks */,
+				AAD4E7DE265BFFB4001753E9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = relic_s;
+			productName = relic_s;
+			productReference = AAD4E7E0265BFFB4001753E9 /* librelic_s.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -156,12 +1134,19 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
+					};
+					AAD4E7D3265BFFA8001753E9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					AAD4E7DF265BFFB4001753E9 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -179,6 +1164,8 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
+				AAD4E7D3265BFFA8001753E9 /* bls */,
+				AAD4E7DF265BFFB4001753E9 /* relic_s */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +1264,276 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD4E7D0265BFFA8001753E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4EA02265C0004001753E9 /* elements.cpp in Sources */,
+				AAD4EA01265C0004001753E9 /* bls.cpp in Sources */,
+				AAD4EA03265C0004001753E9 /* privatekey.cpp in Sources */,
+				AAD4EA04265C0004001753E9 /* schemes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E7DC265BFFB4001753E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4E9CD265BFFD3001753E9 /* relic_eb_mul_sim.c in Sources */,
+				AAD4E90A265BFFD3001753E9 /* relic_fb_trc_low.c in Sources */,
+				AAD4E92A265BFFD3001753E9 /* relic_fp8_mul.c in Sources */,
+				AAD4E979265BFFD3001753E9 /* relic_ep2_cmp.c in Sources */,
+				AAD4E94A265BFFD3001753E9 /* relic_bn_gcd.c in Sources */,
+				AAD4E932265BFFD3001753E9 /* relic_ep_param.c in Sources */,
+				AAD4E988265BFFD3001753E9 /* relic_fb_exp.c in Sources */,
+				AAD4E95F265BFFD3001753E9 /* relic_ep_map.c in Sources */,
+				AAD4E929265BFFD3001753E9 /* relic_bn_sqr.c in Sources */,
+				AAD4E95D265BFFD3001753E9 /* relic_pp_dbl_k8.c in Sources */,
+				AAD4E998265BFFD3001753E9 /* relic_fp12_mul.c in Sources */,
+				AAD4E977265BFFD3001753E9 /* relic_ep_util.c in Sources */,
+				AAD4E9AE265BFFD3001753E9 /* relic_bn_util.c in Sources */,
+				AAD4E996265BFFD3001753E9 /* relic_bn_smb.c in Sources */,
+				AAD4E93E265BFFD3001753E9 /* relic_ep_curve.c in Sources */,
+				AAD4E99B265BFFD3001753E9 /* relic_bn_mod_low.c in Sources */,
+				AAD4E98B265BFFD3001753E9 /* relic_fb_rdc_low.c in Sources */,
+				AAD4E990265BFFD3001753E9 /* relic_bn_cmp.c in Sources */,
+				AAD4E9CA265BFFD3001753E9 /* relic_bn_shift_low.c in Sources */,
+				AAD4E90D265BFFD3001753E9 /* relic_fb_add.c in Sources */,
+				AAD4E926265BFFD3001753E9 /* relic_eb_norm.c in Sources */,
+				AAD4E970265BFFD3001753E9 /* relic_fp9_mul.c in Sources */,
+				AAD4E9D7265BFFD3001753E9 /* relic_fb2_inv.c in Sources */,
+				AAD4E933265BFFD3001753E9 /* relic_fp_util.c in Sources */,
+				AAD4E914265BFFD3001753E9 /* relic_ep2_map.c in Sources */,
+				AAD4E9BE265BFFD3001753E9 /* relic_fp3_sqr.c in Sources */,
+				AAD4E9DB265BFFD3001753E9 /* relic_pp_add_k48.c in Sources */,
+				AAD4E918265BFFD3001753E9 /* relic_fp18_sqr.c in Sources */,
+				AAD4E978265BFFD3001753E9 /* relic_fp18_mul.c in Sources */,
+				AAD4E967265BFFD3001753E9 /* relic_fpx_inv.c in Sources */,
+				AAD4E985265BFFD3001753E9 /* relic_ed_pck.c in Sources */,
+				AAD4E9AD265BFFD3001753E9 /* relic_md_sha224.c in Sources */,
+				AAD4E981265BFFD3001753E9 /* relic_fb_slv.c in Sources */,
+				AAD4E972265BFFD3001753E9 /* relic_md_mgf.c in Sources */,
+				AAD4E91B265BFFD3001753E9 /* relic_bn_mem.c in Sources */,
+				AAD4E9CF265BFFD3001753E9 /* relic_fp4_mul.c in Sources */,
+				AAD4E971265BFFD3001753E9 /* relic_eb_mul.c in Sources */,
+				AAD4E928265BFFD3001753E9 /* relic_pp_exp_k8.c in Sources */,
+				AAD4E922265BFFD3001753E9 /* relic_fpx_rdc_low.c in Sources */,
+				AAD4E9E8265BFFD3001753E9 /* relic_fp_rdc.c in Sources */,
+				AAD4E910265BFFD3001753E9 /* relic_ep2_mul_sim.c in Sources */,
+				AAD4E909265BFFD3001753E9 /* relic_fb_param.c in Sources */,
+				AAD4E9BB265BFFD3001753E9 /* relic_bn_rec.c in Sources */,
+				AAD4E957265BFFD3001753E9 /* relic_ed_mul.c in Sources */,
+				AAD4E958265BFFD3001753E9 /* relic_pp_dbl_k2.c in Sources */,
+				AAD4E935265BFFD3001753E9 /* relic_ep_psi.c in Sources */,
+				AAD4E9C9265BFFD3001753E9 /* relic_eb_map.c in Sources */,
+				AAD4E9BF265BFFD3001753E9 /* relic_fp6_mul.c in Sources */,
+				AAD4E9DC265BFFD3001753E9 /* relic_ep_mul.c in Sources */,
+				AAD4E923265BFFD3001753E9 /* relic_fp9_sqr.c in Sources */,
+				AAD4E92C265BFFD3001753E9 /* relic_pp_dbl_k54.c in Sources */,
+				AAD4E90C265BFFD3001753E9 /* relic_pp_add_k8.c in Sources */,
+				AAD4E91E265BFFD3001753E9 /* relic_cp_bls.c in Sources */,
+				AAD4E9C6265BFFD3001753E9 /* relic_md_sha256.c in Sources */,
+				AAD4E908265BFFD3001753E9 /* relic_fpx_srt.c in Sources */,
+				AAD4E945265BFFD3001753E9 /* relic_pp_add_k54.c in Sources */,
+				AAD4E9C7265BFFD3001753E9 /* relic_fp12_sqr.c in Sources */,
+				AAD4E9B1265BFFD3001753E9 /* relic_eb_param.c in Sources */,
+				AAD4E9B4265BFFD3001753E9 /* relic_fp4_sqr.c in Sources */,
+				AAD4E97D265BFFD3001753E9 /* relic_ed_cmp.c in Sources */,
+				AAD4E976265BFFD3001753E9 /* sha384-512.c in Sources */,
+				AAD4E921265BFFD3001753E9 /* relic_ed_param.c in Sources */,
+				AAD4E98F265BFFD3001753E9 /* relic_bn_prime.c in Sources */,
+				AAD4E939265BFFD3001753E9 /* relic_ep_add.c in Sources */,
+				AAD4E966265BFFD3001753E9 /* relic_fb_itr.c in Sources */,
+				AAD4E99E265BFFD3001753E9 /* relic_fb_itr_low.c in Sources */,
+				AAD4E93B265BFFD3001753E9 /* relic_bn_inv.c in Sources */,
+				AAD4E944265BFFD3001753E9 /* relic_cp_cmlhs.c in Sources */,
+				AAD4E9DD265BFFD3001753E9 /* relic_rand_core.c in Sources */,
+				AAD4E9EE265BFFD4001753E9 /* relic_md_sha384.c in Sources */,
+				AAD4E946265BFFD3001753E9 /* relic_fp24_sqr.c in Sources */,
+				AAD4E960265BFFD3001753E9 /* relic_pp_exp_k54.c in Sources */,
+				AAD4E92E265BFFD3001753E9 /* relic_fp_add_low.c in Sources */,
+				AAD4E964265BFFD3001753E9 /* relic_fb_srt_low.c in Sources */,
+				AAD4E9E5265BFFD3001753E9 /* relic_bc_aes.c in Sources */,
+				AAD4E90F265BFFD3001753E9 /* relic_pp_add_k2.c in Sources */,
+				AAD4E9D0265BFFD3001753E9 /* relic_eb_hlv.c in Sources */,
+				AAD4E93C265BFFD3001753E9 /* relic_fb_shift_low.c in Sources */,
+				AAD4E993265BFFD3001753E9 /* relic_fp_param.c in Sources */,
+				AAD4E92F265BFFD3001753E9 /* relic_bn_sqr_low.c in Sources */,
+				AAD4E917265BFFD3001753E9 /* relic_cp_cls.c in Sources */,
+				AAD4E930265BFFD3001753E9 /* relic_eb_util.c in Sources */,
+				AAD4E95C265BFFD3001753E9 /* relic_cp_vbnn.c in Sources */,
+				AAD4E98D265BFFD3001753E9 /* relic_fp_cmp.c in Sources */,
+				AAD4E911265BFFD3001753E9 /* relic_ed_curve.c in Sources */,
+				AAD4E99A265BFFD3001753E9 /* relic_core.c in Sources */,
+				AAD4E992265BFFD3001753E9 /* relic_bn_add.c in Sources */,
+				AAD4E989265BFFD3001753E9 /* relic_fp2_sqr.c in Sources */,
+				AAD4E975265BFFD3001753E9 /* relic_ed_norm.c in Sources */,
+				AAD4E99D265BFFD3001753E9 /* relic_fpx_rdc.c in Sources */,
+				AAD4E9C2265BFFD3001753E9 /* relic_fpx_add.c in Sources */,
+				AAD4E96F265BFFD3001753E9 /* relic_ep_norm.c in Sources */,
+				AAD4E943265BFFD3001753E9 /* relic_eb_frb.c in Sources */,
+				AAD4E936265BFFD3001753E9 /* relic_fpx_frb.c in Sources */,
+				AAD4E9BC265BFFD3001753E9 /* relic_fb2_sqr.c in Sources */,
+				AAD4E9E4265BFFD3001753E9 /* relic_fb2_slv.c in Sources */,
+				AAD4E959265BFFD3001753E9 /* relic_fpx_exp.c in Sources */,
+				AAD4E905265BFFD3001753E9 /* relic_ep2_dbl.c in Sources */,
+				AAD4E941265BFFD3001753E9 /* relic_eb_neg.c in Sources */,
+				AAD4E980265BFFD3001753E9 /* relic_fp54_sqr.c in Sources */,
+				AAD4E9EC265BFFD4001753E9 /* relic_ep2_curve.c in Sources */,
+				AAD4E915265BFFD3001753E9 /* rijndael-alg-fst.c in Sources */,
+				AAD4E9B9265BFFD3001753E9 /* relic_fpx_add_low.c in Sources */,
+				AAD4E93F265BFFD3001753E9 /* relic_fp_inv.c in Sources */,
+				AAD4E937265BFFD3001753E9 /* relic_ep_cmp.c in Sources */,
+				AAD4E96C265BFFD3001753E9 /* relic_ed_util.c in Sources */,
+				AAD4E9B8265BFFD3001753E9 /* relic_fp_inv_low.c in Sources */,
+				AAD4E96B265BFFD3001753E9 /* relic_ep2_mul_fix.c in Sources */,
+				AAD4E9EB265BFFD4001753E9 /* relic_arch_x64.c in Sources */,
+				AAD4E98A265BFFD3001753E9 /* rijndael-api-fst.c in Sources */,
+				AAD4E925265BFFD3001753E9 /* relic_pp_exp_k2.c in Sources */,
+				AAD4E9D2265BFFD3001753E9 /* relic_cp_phpe.c in Sources */,
+				AAD4E9EA265BFFD3001753E9 /* relic_ed_dbl.c in Sources */,
+				AAD4E96D265BFFD3001753E9 /* relic_md_hmac.c in Sources */,
+				AAD4E940265BFFD3001753E9 /* relic_fp_prime.c in Sources */,
+				AAD4E9C1265BFFD3001753E9 /* relic_fb_srt.c in Sources */,
+				AAD4E9ED265BFFD4001753E9 /* relic_pc_exp.c in Sources */,
+				AAD4E9CC265BFFD3001753E9 /* relic_cp_pss.c in Sources */,
+				AAD4E96E265BFFD3001753E9 /* relic_fb_poly.c in Sources */,
+				AAD4E9D5265BFFD3001753E9 /* relic_ep_mul_fix.c in Sources */,
+				AAD4E9CE265BFFD3001753E9 /* relic_fb_mul.c in Sources */,
+				AAD4E9D6265BFFD3001753E9 /* relic_eb_dbl.c in Sources */,
+				AAD4E99F265BFFD3001753E9 /* relic_fb_inv_low.c in Sources */,
+				AAD4E912265BFFD3001753E9 /* relic_util.c in Sources */,
+				AAD4E9D4265BFFD3001753E9 /* relic_cp_ecss.c in Sources */,
+				AAD4E9AF265BFFD3001753E9 /* relic_cp_ecdsa.c in Sources */,
+				AAD4E94C265BFFD3001753E9 /* relic_mt_mpc.c in Sources */,
+				AAD4E9A5265BFFD3001753E9 /* relic_fp3_mul.c in Sources */,
+				AAD4E9F0265BFFD4001753E9 /* relic_cp_sokaka.c in Sources */,
+				AAD4E9E0265BFFD3001753E9 /* relic_md_sha512.c in Sources */,
+				AAD4E9C0265BFFD3001753E9 /* relic_fpx_pck.c in Sources */,
+				AAD4E9B5265BFFD3001753E9 /* relic_md_kdf.c in Sources */,
+				AAD4E9B0265BFFD3001753E9 /* relic_md_blake2s.c in Sources */,
+				AAD4E95B265BFFD3001753E9 /* relic_pp_map_k2.c in Sources */,
+				AAD4E9D3265BFFD3001753E9 /* relic_pp_exp_k12.c in Sources */,
+				AAD4E934265BFFD3001753E9 /* relic_fb_slv_low.c in Sources */,
+				AAD4E995265BFFD3001753E9 /* relic_bn_factor.c in Sources */,
+				AAD4E9CB265BFFD3001753E9 /* relic_cp_ecdh.c in Sources */,
+				AAD4E97E265BFFD3001753E9 /* relic_ed_add.c in Sources */,
+				AAD4E9B7265BFFD3001753E9 /* relic_ep_mul_sim.c in Sources */,
+				AAD4E954265BFFD3001753E9 /* relic_pc_mpc.c in Sources */,
+				AAD4E90B265BFFD3001753E9 /* relic_cp_zss.c in Sources */,
+				AAD4E9F1265BFFD4001753E9 /* relic_fp_mul_low.c in Sources */,
+				AAD4E953265BFFD3001753E9 /* relic_cp_bbs.c in Sources */,
+				AAD4E963265BFFD3001753E9 /* relic_fb_rdc.c in Sources */,
+				AAD4E991265BFFD3001753E9 /* relic_fb_mul_low.c in Sources */,
+				AAD4E9D9265BFFD3001753E9 /* relic_fp48_sqr.c in Sources */,
+				AAD4E947265BFFD3001753E9 /* lzcnt.inc in Sources */,
+				AAD4E920265BFFD3001753E9 /* relic_fb_trc.c in Sources */,
+				AAD4E93A265BFFD3001753E9 /* sha224-256.c in Sources */,
+				AAD4E931265BFFD3001753E9 /* relic_fp24_mul.c in Sources */,
+				AAD4E97B265BFFD3001753E9 /* relic_fb_util.c in Sources */,
+				AAD4E962265BFFD3001753E9 /* relic_fpx_sqr_low.c in Sources */,
+				AAD4E9C4265BFFD3001753E9 /* relic_fpx_util.c in Sources */,
+				AAD4E9B2265BFFD3001753E9 /* relic_pc_util.c in Sources */,
+				AAD4E987265BFFD3001753E9 /* relic_ed_mul_fix.c in Sources */,
+				AAD4E98C265BFFD3001753E9 /* relic_fp_add.c in Sources */,
+				AAD4E9A6265BFFD3001753E9 /* relic_fp6_sqr.c in Sources */,
+				AAD4E9BD265BFFD3001753E9 /* relic_pp_add_k12.c in Sources */,
+				AAD4E94E265BFFD3001753E9 /* relic_fp_mul.c in Sources */,
+				AAD4E9A3265BFFD3001753E9 /* relic_eb_add.c in Sources */,
+				AAD4E948265BFFD3001753E9 /* relic_bn_mul.c in Sources */,
+				AAD4E907265BFFD3001753E9 /* relic_dv_mem.c in Sources */,
+				AAD4E983265BFFD3001753E9 /* relic_fp_sqr_low.c in Sources */,
+				AAD4E9E1265BFFD3001753E9 /* relic_fb_sqr_low.c in Sources */,
+				AAD4E982265BFFD3001753E9 /* relic_bn_add_low.c in Sources */,
+				AAD4E98E265BFFD3001753E9 /* relic_cp_bgn.c in Sources */,
+				AAD4E97C265BFFD3001753E9 /* relic_bn_div_low.c in Sources */,
+				AAD4E999265BFFD3001753E9 /* relic_md_xmd.c in Sources */,
+				AAD4E9B6265BFFD3001753E9 /* relic_eb_mul_fix.c in Sources */,
+				AAD4E9C5265BFFD3001753E9 /* relic_pp_map.c in Sources */,
+				AAD4E9C8265BFFD3001753E9 /* relic_bn_mxp.c in Sources */,
+				AAD4E9AC265BFFD3001753E9 /* relic_fb2_mul.c in Sources */,
+				AAD4E952265BFFD3001753E9 /* relic_err.c in Sources */,
+				AAD4E9DF265BFFD3001753E9 /* relic_fp54_mul.c in Sources */,
+				AAD4E9A1265BFFD3001753E9 /* relic_pp_dbl_k12.c in Sources */,
+				AAD4E97F265BFFD3001753E9 /* relic_pp_dbl_k48.c in Sources */,
+				AAD4E9A2265BFFD3001753E9 /* relic_eb_cmp.c in Sources */,
+				AAD4E92B265BFFD3001753E9 /* relic_fp_sqr.c in Sources */,
+				AAD4E916265BFFD3001753E9 /* blake2s-ref.c in Sources */,
+				AAD4E94F265BFFD3001753E9 /* relic_fpx_field.c in Sources */,
+				AAD4E994265BFFD3001753E9 /* relic_ep2_frb.c in Sources */,
+				AAD4E90E265BFFD3001753E9 /* relic_fb_cmp.c in Sources */,
+				AAD4E927265BFFD3001753E9 /* relic_ep2_mul_cof.c in Sources */,
+				AAD4E9DE265BFFD3001753E9 /* relic_ed_map.c in Sources */,
+				AAD4E9F2265BFFD4001753E9 /* relic_fp2_mul.c in Sources */,
+				AAD4E942265BFFD3001753E9 /* relic_cp_ecies.c in Sources */,
+				AAD4E96A265BFFD3001753E9 /* relic_ep2_util.c in Sources */,
+				AAD4E91F265BFFD3001753E9 /* relic_pc_core.c in Sources */,
+				AAD4E9BA265BFFD3001753E9 /* relic_rand_hashd.c in Sources */,
+				AAD4E99C265BFFD3001753E9 /* relic_eb_curve.c in Sources */,
+				AAD4E9A7265BFFD3001753E9 /* relic_fb_inv.c in Sources */,
+				AAD4E950265BFFD3001753E9 /* relic_fb_add_low.c in Sources */,
+				AAD4E9A8265BFFD3001753E9 /* relic_eb_pck.c in Sources */,
+				AAD4E9A4265BFFD3001753E9 /* relic_ep2_mul.c in Sources */,
+				AAD4E961265BFFD3001753E9 /* relic_bn_mul_low.c in Sources */,
+				AAD4E974265BFFD3001753E9 /* relic_pp_norm.c in Sources */,
+				AAD4E949265BFFD3001753E9 /* relic_fp8_sqr.c in Sources */,
+				AAD4E91A265BFFD3001753E9 /* relic_fpx_mul_low.c in Sources */,
+				AAD4E9A0265BFFD3001753E9 /* relic_cp_ibe.c in Sources */,
+				AAD4E95A265BFFD3001753E9 /* relic_fp_srt.c in Sources */,
+				AAD4E91C265BFFD3001753E9 /* relic_cp_ghpe.c in Sources */,
+				AAD4E913265BFFD3001753E9 /* relic_dv_util.c in Sources */,
+				AAD4E986265BFFD3001753E9 /* relic_fp_shift.c in Sources */,
+				AAD4E951265BFFD3001753E9 /* relic_ep_dbl.c in Sources */,
+				AAD4E973265BFFD3001753E9 /* relic_ep2_pck.c in Sources */,
+				AAD4E94B265BFFD3001753E9 /* relic_cp_bdpe.c in Sources */,
+				AAD4E924265BFFD3001753E9 /* relic_bn_mod.c in Sources */,
+				AAD4E919265BFFD3001753E9 /* relic_fb_shift.c in Sources */,
+				AAD4E9E9265BFFD3001753E9 /* relic_conf.c in Sources */,
+				AAD4E9A9265BFFD3001753E9 /* relic_ep_neg.c in Sources */,
+				AAD4E965265BFFD3001753E9 /* relic_ep2_norm.c in Sources */,
+				AAD4E9E6265BFFD3001753E9 /* relic_fp_rdc_low.c in Sources */,
+				AAD4E9B3265BFFD3001753E9 /* relic_fb_sqr.c in Sources */,
+				AAD4E906265BFFD3001753E9 /* relic_fp_exp.c in Sources */,
+				AAD4E968265BFFD3001753E9 /* relic_pp_map_k12.c in Sources */,
+				AAD4E92D265BFFD3001753E9 /* relic_bn_shift.c in Sources */,
+				AAD4E9C3265BFFD3001753E9 /* relic_fpx_cmp.c in Sources */,
+				AAD4E955265BFFD3001753E9 /* relic_cp_ecmqv.c in Sources */,
+				AAD4E969265BFFD3001753E9 /* relic_cp_mpss.c in Sources */,
+				AAD4E9AB265BFFD3001753E9 /* relic_fp_shift_low.c in Sources */,
+				AAD4E956265BFFD3001753E9 /* relic_pp_map_k8.c in Sources */,
+				AAD4E9DA265BFFD3001753E9 /* relic_ep2_neg.c in Sources */,
+				AAD4E93D265BFFD3001753E9 /* relic_ep_pck.c in Sources */,
+				AAD4E97A265BFFD3001753E9 /* relic_ep2_add.c in Sources */,
+				AAD4E9D1265BFFD3001753E9 /* relic_bn_lcm.c in Sources */,
+				AAD4E94D265BFFD3001753E9 /* relic_pp_map_k48.c in Sources */,
+				AAD4E9AA265BFFD3001753E9 /* relic_fpx_cyc.c in Sources */,
+				AAD4E9EF265BFFD4001753E9 /* relic_pp_exp_k48.c in Sources */,
+				AAD4E997265BFFD3001753E9 /* relic_cp_rabin.c in Sources */,
+				AAD4E9E3265BFFD3001753E9 /* relic_cp_mklhs.c in Sources */,
+				AAD4E95E265BFFD3001753E9 /* relic_bn_srt.c in Sources */,
+				AAD4E9E7265BFFD3001753E9 /* relic_ed_mul_sim.c in Sources */,
+				AAD4E91D265BFFD3001753E9 /* relic_ed_neg.c in Sources */,
+				AAD4E9D8265BFFD3001753E9 /* relic_cp_rsa.c in Sources */,
+				AAD4E9E2265BFFD3001753E9 /* relic_pp_map_k54.c in Sources */,
+				AAD4E984265BFFD3001753E9 /* relic_fp48_mul.c in Sources */,
+				AAD4E938265BFFD3001753E9 /* relic_bn_div.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAD4EA06265C002E001753E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD4E7D3265BFFA8001753E9 /* bls */;
+			targetProxy = AAD4EA05265C002E001753E9 /* PBXContainerItemProxy */;
+		};
+		AAD4EA08265C0030001753E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAD4E7DF265BFFB4001753E9 /* relic_s */;
+			targetProxy = AAD4EA07265C0030001753E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -358,7 +1614,10 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.chiaWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -467,7 +1726,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -482,7 +1742,10 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.chiaWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -501,7 +1764,10 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.chiaWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -509,6 +1775,144 @@
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
+		};
+		AAD4E7D8265BFFA8001753E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAD4E7D9265BFFA8001753E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAD4E7DA265BFFA8001753E9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
+		AAD4E7E5265BFFB4001753E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAD4E7E6265BFFB4001753E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAD4E7E7265BFFB4001753E9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJ55YUX93;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
 		};
 /* End XCBuildConfiguration section */
 
@@ -529,6 +1933,26 @@
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
 				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD4E7DB265BFFA8001753E9 /* Build configuration list for PBXNativeTarget "bls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD4E7D8265BFFA8001753E9 /* Debug */,
+				AAD4E7D9265BFFA8001753E9 /* Release */,
+				AAD4E7DA265BFFA8001753E9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD4E7E4265BFFB4001753E9 /* Build configuration list for PBXNativeTarget "relic_s" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD4E7E5265BFFB4001753E9 /* Debug */,
+				AAD4E7E6265BFFB4001753E9 /* Release */,
+				AAD4E7E7265BFFB4001753E9 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
