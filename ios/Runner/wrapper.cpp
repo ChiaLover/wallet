@@ -22,15 +22,6 @@ void printKey(vector<uint8_t> key) {
     cout << endl;
 }
 
-vector<uint8_t> append(vector<uint8_t> a, vector<uint8_t> b) {
-    
-    a.insert(a.end(), b.begin(), b.end());
-    return a;
-}
-
-//{0,  51, 6,  244, 24,  199, 1,  25,  52,  88,  192,
-//                            19, 18, 12, 89,  6,   220, 18, 102, 58,  209, 82,
-//                            12, 62, 89, 110, 182, 9,   44, 20,  254, 22};
 extern "C" __attribute__((visibility("default"))) __attribute__((used))
 uint8_t* key_gen(uint8_t* seedBytes) {
     std::vector<uint8_t> seed(seedBytes, seedBytes + 32);
