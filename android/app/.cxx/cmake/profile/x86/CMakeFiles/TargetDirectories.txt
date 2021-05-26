@@ -1,0 +1,4 @@
+/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/profile/x86/CMakeFiles/rebuild_cache.dir
+/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/profile/x86/CMakeFiles/edit_cache.dir
+/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/profile/x86/CMakeFiles/bls.dir
+/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/profile/x86/CMakeFiles/relic_s.dir

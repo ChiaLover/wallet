@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64'
+[1/2] Building CXX object CMakeFiles/bls.dir/Users/phuonglam/working/chia/wallet/ios/Runner/wrapper.cpp.o
+[2/2] Linking CXX shared library /Users/phuonglam/working/chia/wallet/build/app/intermediates/cmake/release/obj/x86_64/libbls.so

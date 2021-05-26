@@ -1,0 +1,30 @@
+{
+  "buildFiles": [
+    "/Users/phuonglam/working/chia/wallet/android/app/bls/CMakeLists.txt",
+    "/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja  -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "relic_s-Debug-x86_64": {
+      "artifactName": "relic_s",
+      "buildCommand": "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/x86_64\" relic_s",
+      "abi": "x86_64",
+      "output": "/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/x86_64/librelic_s.a",
+      "runtimeFiles": []
+    },
+    "bls-Debug-x86_64": {
+      "artifactName": "bls",
+      "buildCommand": "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/x86_64\" bls",
+      "abi": "x86_64",
+      "output": "/Users/phuonglam/working/chia/wallet/build/app/intermediates/cmake/debug/obj/x86_64/libbls.so",
+      "runtimeFiles": [
+        "/Users/phuonglam/working/chia/wallet/android/app/jniLibs/x86_64/libgmp.so",
+        "/Users/phuonglam/working/chia/wallet/android/app/jniLibs/x86_64/libsodium.so"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/arm64-v8a'
+[1/1] Linking CXX shared library /Users/phuonglam/working/chia/wallet/build/app/intermediates/cmake/debug/obj/arm64-v8a/libbls.so

@@ -58,7 +58,8 @@ static unsigned int (*lzcnt_ptr)(ull_t);
 /*============================================================================*/
 
 void arch_init(void) {
-	lzcnt_ptr = (has_lzcnt_hard() ? lzcnt64_hard : lzcnt64_soft);
+	lzcnt_ptr = lzcnt64_soft;
+//	lzcnt_ptr = (has_lzcnt_hard() ? lzcnt64_hard : lzcnt64_soft);
 }
 
 void arch_clean(void) {

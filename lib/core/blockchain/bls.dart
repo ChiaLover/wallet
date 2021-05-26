@@ -9,7 +9,7 @@ typedef NativeVerifyFuncType = Int8 Function(Pointer<Uint8>);
 
 // library
 final nativeLib = Platform.isAndroid
-    ? DynamicLibrary.open("libsbl.so")
+    ? DynamicLibrary.open("libbls.so")
     : DynamicLibrary.process();
 
 final nativeKeyGen = nativeLib.lookupFunction<

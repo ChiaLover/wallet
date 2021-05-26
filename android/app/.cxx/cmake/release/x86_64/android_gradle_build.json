@@ -1,0 +1,1458 @@
+{
+  "stringTable": {
+    "0": "/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dbls_EXPORTS -I/Users/phuonglam/working/chia/wallet/android/app/bls/../../../ios/relic_s/Headers -I/Users/phuonglam/working/chia/wallet/android/app/bls/../../../ios/relic_s/Headers/low -I/Users/phuonglam/working/chia/wallet/android/app/bls/../../../ios/bls/Headers -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC -std=gnu++17",
+    "2": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -I/Users/phuonglam/working/chia/wallet/android/app/bls/../../../ios/relic_s/Headers -I/Users/phuonglam/working/chia/wallet/android/app/bls/../../../ios/relic_s/Headers/low -I/Users/phuonglam/working/chia/wallet/android/app/bls/../../../ios/bls/Headers -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC -std=gnu11",
+    "3": "null"
+  },
+  "buildFiles": [
+    "/Users/phuonglam/working/chia/wallet/android/app/bls/CMakeLists.txt",
+    "/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja  -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "bls-Release-x86_64": {
+      "buildCommand": "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64\" bls",
+      "buildType": "release",
+      "toolchain": "600806592",
+      "abi": "x86_64",
+      "artifactName": "bls",
+      "files": [
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/bls/Source/bls.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/bls/Source/elements.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/bls/Source/privatekey.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/bls/Source/schemes.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/Runner/wrapper.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/bls.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/elements.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/hdkeys.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/hkdf.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/privatekey.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/schemes.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/test-utils.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/bls/Headers/util.hpp",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "/Users/phuonglam/working/chia/wallet/build/app/intermediates/cmake/release/obj/x86_64/libbls.so",
+      "runtimeFiles": [
+        "/Users/phuonglam/working/chia/wallet/android/app/jniLibs/x86_64/libsodium.so",
+        "/Users/phuonglam/working/chia/wallet/android/app/jniLibs/x86_64/libgmp.so"
+      ]
+    },
+    "relic_s-Release-x86_64": {
+      "buildCommand": "/Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja -C \"/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64\" relic_s",
+      "buildType": "release",
+      "toolchain": "600806592",
+      "abi": "x86_64",
+      "artifactName": "relic_s",
+      "files": [
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/blake2s-ref.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_arch_x64.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bc_aes.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_add_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_div.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_div_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_factor.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_gcd.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_inv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_lcm.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_mem.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_mod.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_mod_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_mul_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_mxp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_prime.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_rec.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_shift.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_shift_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_smb.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_sqr_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_srt.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_bn_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_conf.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_core.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_bbs.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_bdpe.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_bgn.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_bls.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_cls.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_cmlhs.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ecdh.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ecdsa.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ecies.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ecmqv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ecss.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ghpe.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_ibe.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_mklhs.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_mpss.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_phpe.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_pss.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_rabin.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_rsa.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_sokaka.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_vbnn.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_cp_zss.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_dv_mem.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_dv_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_curve.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_dbl.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_frb.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_hlv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_map.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_mul_fix.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_mul_sim.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_neg.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_norm.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_param.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_pck.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_eb_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_curve.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_dbl.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_map.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_mul_fix.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_mul_sim.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_neg.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_norm.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_param.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_pck.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ed_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_curve.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_dbl.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_frb.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_map.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_mul_cof.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_mul_fix.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_mul_sim.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_neg.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_norm.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_pck.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep2_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_curve.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_dbl.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_map.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_mul_fix.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_mul_sim.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_neg.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_norm.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_param.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_pck.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_psi.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_ep_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_err.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb2_inv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb2_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb2_slv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb2_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_add_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_exp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_inv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_inv_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_itr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_itr_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_mul_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_param.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_poly.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_rdc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_rdc_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_shift.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_shift_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_slv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_slv_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_sqr_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_srt.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_srt_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_trc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_trc_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fb_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp12_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp12_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp18_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp18_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp24_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp24_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp2_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp2_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp3_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp3_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp48_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp48_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp4_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp4_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp54_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp54_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp6_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp6_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp8_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp8_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp9_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp9_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_add_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_exp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_inv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_inv_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_mul.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_mul_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_param.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_prime.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_rdc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_rdc_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_shift.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_shift_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_sqr.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_sqr_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_srt.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fp_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_add.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_add_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_cmp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_cyc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_exp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_field.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_frb.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_inv.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_mul_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_pck.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_rdc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_rdc_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_sqr_low.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_srt.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_fpx_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_blake2s.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_hmac.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_kdf.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_mgf.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_sha224.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_sha256.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_sha384.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_sha512.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_md_xmd.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_mt_mpc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pc_core.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pc_exp.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pc_mpc.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pc_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_add_k12.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_add_k2.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_add_k48.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_add_k54.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_add_k8.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_dbl_k12.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_dbl_k2.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_dbl_k48.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_dbl_k54.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_dbl_k8.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_exp_k12.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_exp_k2.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_exp_k48.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_exp_k54.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_exp_k8.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_map.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_map_k12.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_map_k2.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_map_k48.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_map_k54.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_map_k8.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_pp_norm.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_rand_core.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_rand_hashd.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/relic_util.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/rijndael-alg-fst.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/rijndael-api-fst.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/sha224-256.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/sha384-512.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Sources/lzcnt.inc",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/blake2-impl.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/blake2.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/gmp.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_alloc.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_arch.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_bc.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_bench.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_bn.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_conf.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_core.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_cp.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_dv.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_eb.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_ec.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_ed.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_ep.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_epx.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_err.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_fb.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_fbx.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_fp.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_fpx.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_label.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_md.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_mpc.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_multi.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_pc.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_pp.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_rand.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_test.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_tmpl_map.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_types.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/relic_util.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/rijndael-alg-fst.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/rijndael-api-fst.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/sha.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/phuonglam/working/chia/wallet/ios/relic_s/Headers/sha_private.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/release/x86_64/librelic_s.a"
+    }
+  },
+  "toolchains": {
+    "600806592": {
+      "cCompilerExecutable": "/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/phuonglam/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
