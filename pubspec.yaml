@@ -33,6 +33,8 @@ dependencies:
   flutter_bloc: 7.0.0
   hexcolor: 2.0.3
   flutter_svg: 0.22.0
+  ffi: ^1.0.0
+  convert: ^3.0.0
 
 dev_dependencies:
   flutter_test:
