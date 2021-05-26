@@ -1,7 +1,0 @@
-Executable : /Users/phuonglam/Library/Android/sdk/cmake/3.18.1/bin/ninja
-arguments : 
--C
-/Users/phuonglam/working/chia/wallet/android/app/.cxx/cmake/debug/x86
-bls
-jvmArgs : 
-
