@@ -10,8 +10,31 @@ class WalletDetailPage extends StatefulWidget {
 }
 
 class _WalletDetailPageState extends State<WalletDetailPage> {
+  late WalletDetailBloc bloc;
+
+  @override
+  void initState() {
+    super.initState();
+    bloc = WalletDetailBloc();
+  }
+
+  @override
+  void dispose() {
+    bloc.close();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold());
+    return Scaffold(
+      body: BlocProvider(
+        create: (_) => bloc,
+        child: SafeArea(
+          child: Container(
+            child: WalletDetailTemplate(),
+          ),
+        ),
+      ),
+    );
   }
 }

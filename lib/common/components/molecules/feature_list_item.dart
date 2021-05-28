@@ -7,7 +7,7 @@ class FeatureListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       //Todo: Change icon feature
-      leading: Icon(Icons.featured_play_list),
+      leading:  SvgPicture.asset(AssetLinks.icFeature),
       title: Text("Advanced features"),
       trailing: Icon(Icons.chevron_right),
       contentPadding: EdgeInsets.zero,

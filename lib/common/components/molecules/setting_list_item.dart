@@ -7,7 +7,7 @@ class SettingListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       //Todo: Change icon setting
-      leading: Icon(Icons.settings),
+      leading: SvgPicture.asset(AssetLinks.icSetting),
       title: Text("Settings and support"),
       trailing: Icon(Icons.chevron_right),
       contentPadding: EdgeInsets.zero,

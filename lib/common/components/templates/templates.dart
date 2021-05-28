@@ -17,3 +17,4 @@ part 'usercase_entry_point.dart';
 part 'wallet_creation_template.dart';
 part 'terms_rules_modal.dart';
 part 'wallet_creation_password_modal.dart';
+part 'wallet_detail_template.dart';

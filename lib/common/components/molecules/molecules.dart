@@ -6,11 +6,15 @@ import 'package:chia_wallet/common/components/pages/pages.dart';
 import 'package:chia_wallet/common/components/templates/templates.dart';
 import 'package:chia_wallet/core/utils/log.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hexcolor/hexcolor.dart';
-
 part 'wallet_creation_card.dart';
+part 'account_creation_card.dart';
+part 'account_detail_card.dart';
 part 'feedback_list_item.dart';
 part 'setting_list_item.dart';
 part 'feature_list_item.dart';
 part 'term_item.dart';
 part 'pin_listing.dart';
+part 'send_button.dart';
+part 'receive_button.dart';

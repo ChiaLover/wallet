@@ -1,7 +1,7 @@
 part of molecules;
 
-class WalletCreationCard extends StatelessWidget {
-  const WalletCreationCard({Key? key}) : super(key: key);
+class AccountCreationCard extends StatelessWidget {
+  const AccountCreationCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class WalletCreationCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               ButtonAdd(),
-              H5("Create a free wallet", style: whiteColorStyle,),
+              H5("Add account", style: whiteColorStyle,),
               Text(
                 "Lorem Ipsum has been the industry's standard dummy text ever since the.",
                 style: whiteColorStyle,
