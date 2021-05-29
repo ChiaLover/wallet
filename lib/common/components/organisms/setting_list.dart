@@ -1,7 +1,7 @@
 part of organisms;
 
-class SettingListWalletCreation extends StatelessWidget {
-  const SettingListWalletCreation({Key? key}) : super(key: key);
+class SettingList extends StatelessWidget {
+  const SettingList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

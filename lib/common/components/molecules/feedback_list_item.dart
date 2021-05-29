@@ -7,7 +7,7 @@ class FeedbackListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       //Todo: Change icon feature
-      leading: Icon(Icons.feedback_outlined),
+      leading:  SvgPicture.asset(AssetLinks.icFeedback),
       title: Text("Feedback"),
       trailing: Icon(Icons.chevron_right),
       contentPadding: EdgeInsets.zero,
