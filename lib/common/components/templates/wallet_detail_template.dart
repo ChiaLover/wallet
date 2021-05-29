@@ -16,7 +16,7 @@ class WalletDetailTemplate extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 8, left: 24),
         ),
         Container(
-          child: BodyText1("\u0024 0.00"),
+          child: BodyText1("\$ 0.00"),
           margin: EdgeInsets.only(bottom: 16, left: 24),
         ),
         CardsSwiper(),

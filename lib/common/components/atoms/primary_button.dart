@@ -8,7 +8,9 @@ class PrimaryButton extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
+    final background = Theme.of(context).primaryColor;
     return ElevatedButton(
+      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(background)),
       onPressed: this.onPressed,
       child: child,
     );
