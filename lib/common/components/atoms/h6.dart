@@ -10,7 +10,7 @@ class H6 extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final textStyle = theme.textTheme.headline6?.merge(this.style);
-
+    Log.debug("H6:: ${textStyle?.height}");
     return Text(
       this.text,
       style: textStyle,

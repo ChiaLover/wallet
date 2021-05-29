@@ -9,7 +9,9 @@ enum LogLevel { DEBUG, INFO, ERROR }
 class Log {
   static Uri? _uri;
 
-  static LogLevel logLevel = LogLevel.values[Config.getInt("log_level") ?? LogLevel.ERROR.index] ;
+  static LogLevel logLevel = Config.getInt("log_level") !=null
+      ? LogLevel.values[Config.getInt("log_level")!]
+      : LogLevel.ERROR;
 
   static void postLog(String data) {
     try {

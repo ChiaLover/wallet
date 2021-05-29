@@ -14,7 +14,7 @@ import 'package:flutter_card_swipper/flutter_card_swiper.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-part 'setting_list_creation.dart';
+part 'setting_list.dart';
 part 'term_listing.dart';
 part 'pin_code.dart';
 part 'password_creation_view.dart';

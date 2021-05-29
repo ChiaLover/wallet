@@ -27,7 +27,7 @@ class _WalletCreationPageState extends State<WalletCreationPage> {
                   margin: EdgeInsets.only(bottom: 24),
                   child: WalletCreationCard(),
                 ),
-                SettingListWalletCreation(),
+                SettingList(),
                 Subtitle2('CHIA wallet Inc, is an independent, self-funded company. We provide a free, open-source, client-side tool for interacting with the blockchain.'),
               ],
             ),

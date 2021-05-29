@@ -22,7 +22,7 @@ class WalletDetailTemplate extends StatelessWidget {
         CardsSwiper(),
         WalletActions(),
         Container(
-          child: SettingListWalletCreation(),
+          child: SettingList(),
           margin: EdgeInsets.only(left: 24, right: 24, top: 24),
         ),
         Container(
