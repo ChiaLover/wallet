@@ -18,6 +18,7 @@ class SquareButton extends StatelessWidget {
         style: ButtonStyle(
           padding: MaterialStateProperty.all(EdgeInsets.zero),
           backgroundColor: MaterialStateProperty.all(color),
+          shadowColor: MaterialStateProperty.all(Colors.transparent),
         ),
         child: Container(
           width: size,

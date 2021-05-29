@@ -31,6 +31,7 @@ class _WalletDetailPageState extends State<WalletDetailPage> {
         create: (_) => bloc,
         child: SafeArea(
           child: Container(
+            color: Colors.white,
             child: WalletDetailTemplate(),
           ),
         ),

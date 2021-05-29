@@ -24,6 +24,7 @@ class _WalletCreationPageState extends State<WalletCreationPage> {
                   child: H4("Wallet"),
                 ),
                 Container(
+                  width: double.infinity,
                   margin: EdgeInsets.only(bottom: 24),
                   child: WalletCreationCard(),
                 ),

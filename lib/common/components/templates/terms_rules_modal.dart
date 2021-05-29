@@ -40,7 +40,7 @@ class TermsRulesTemplate extends StatelessWidget {
             child: TermListing(TermsRulesTemplate.terms),
           ),
           SizedBox(
-            height: 62,
+            height: 46,
             width: double.infinity,
             child: PrimaryButton(
               onPressed: () => _handleCreateWallet(context),
