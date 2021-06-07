@@ -51,5 +51,10 @@ class UsercaseEntryPoint extends StatelessWidget {
     }
   }
 
-  void _handleLoginWallet(BuildContext context) {}
+  void _handleLoginWallet(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => WalletDetailPage("walletId")),
+    );
+  }
 }

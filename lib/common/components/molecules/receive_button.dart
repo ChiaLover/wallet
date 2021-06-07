@@ -14,16 +14,19 @@ class ReceiveButton extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Flex(
           direction: Axis.vertical,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Flexible(
               flex: 2,
-              child: SvgPicture.asset(AssetLinks.icReceive),
+              child: SvgPicture.asset(AssetLinks.icReceive,
+                fit: BoxFit.fill,
+                width: widthButton / 4,
+              ),
             ),
             Flexible(
               child: Flex(
                 direction: Axis.vertical,
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   H6("Receive"),
                   Caption("From existing wallet")

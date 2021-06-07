@@ -12,7 +12,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_card_swipper/flutter_card_swiper.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hexcolor/hexcolor.dart';
 
 part 'setting_list.dart';
 part 'term_listing.dart';
@@ -22,3 +21,8 @@ part 'password_validation_view.dart';
 part 'wallet_creation_view.dart';
 part './wallet_details/cards_swiper.dart';
 part './wallet_details/wallet_actions.dart';
+part './wallet_details/wallet_detail_appbar.dart';
+part './search_monitor/search_monitor_text_field.dart';
+part './search_monitor/address_info_panel.dart';
+part './search_monitor/address_overview_panel.dart';
+part './search_monitor/account_transaction_panel.dart';

@@ -7,10 +7,7 @@ class WalletDetailTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        Container(
-          child: H4("Wallet"),
-          margin: EdgeInsets.only(bottom: 8, top: 16, left: 24),
-        ),
+        WalletDetailAppbar(),
         Container(
           child: BodyText1("Total portfolio value"),
           margin: EdgeInsets.only(bottom: 8, left: 24),

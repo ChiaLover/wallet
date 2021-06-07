@@ -30,7 +30,7 @@ class TermItem extends StatelessWidget {
         BodyText1(
           term.subtitle,
           style: TextStyle(
-            color:WColors.subtitle2,
+            color:WColors.osloGray,
           ),
         ),
       ],

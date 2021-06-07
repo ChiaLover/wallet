@@ -4,9 +4,10 @@ class SquareButton extends StatelessWidget {
   final double size;
   final Color? color;
   final Widget child;
+  final VoidCallback? onPressed;
 
   const SquareButton(
-      {Key? key, required this.child, required this.size, this.color})
+      {Key? key, required this.child, required this.size, this.color, this.onPressed})
       : super(key: key);
 
   @override
@@ -14,7 +15,7 @@ class SquareButton extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(12),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: ButtonStyle(
           padding: MaterialStateProperty.all(EdgeInsets.zero),
           backgroundColor: MaterialStateProperty.all(color),

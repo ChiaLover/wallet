@@ -14,20 +14,21 @@ class SendButton extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Flex(
           direction: Axis.vertical,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Flexible(
               flex: 2,
-              child: SvgPicture.asset(AssetLinks.icSend),
+              child: SvgPicture.asset(
+                AssetLinks.icSend,
+                fit: BoxFit.fill,
+                width: widthButton / 4,
+              ),
             ),
             Flexible(
               child: Flex(
                 direction: Axis.vertical,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  H6("Send"),
-                  Caption("From existing wallet")
-                ],
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [H6("Send"), Caption("From existing wallet")],
               ),
             )
           ],

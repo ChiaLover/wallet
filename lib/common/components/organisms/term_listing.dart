@@ -13,7 +13,7 @@ class TermListing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final style = TextStyle(
-      color: WColors.subtitle2,
+      color: WColors.osloGray,
     );
     return ListView(
       children: [
